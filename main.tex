@@ -1,0 +1,431 @@
+%%%%%%%%% Beginning of the Preamble %%%%%%%%%
+\documentclass[11pt,twoside,a4paper,english]{article}
+
+\def\eg{e.g.,}
+\def\ie{i.e.,}
+\def\og{``}
+\def\fg{"}
+
+\newcommand{\myparagraph}[1]{{\vspace{0cm}\textbf{#1}\vspace{-0.3cm}}}
+\usepackage{graphicx}
+\graphicspath{{figures/}}
+
+\usepackage[affil-it]{authblk}
+\usepackage[space]{grffile}
+\usepackage{latexsym}
+\usepackage{textcomp}
+\usepackage{longtable}
+\usepackage{multirow,booktabs}
+\usepackage{amsfonts,amsmath,amssymb}
+\usepackage{url}
+\usepackage{hyperref}
+%\usepackage{subcaption}
+\hypersetup{colorlinks=false,pdfborder={0 0 0}}
+%\usepackage{latexml}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{lipsum}
+\usepackage{fancyhdr}
+% Added packages Moret
+%\usepackage{fixltx2e} % not necessary for the latest releases
+\usepackage[usenames,dvipsnames]{color} % for color text
+\usepackage{comment} % To comment out blocks of text
+\usepackage{float} % To put figures/tables exactly where I want them
+\usepackage{tablefootnote} % To add footnotes below tables
+\usepackage{scrextend} % to use \footref: multiple reference to the same table footnote
+\usepackage{pbox} % to have new line inside table cells
+\usepackage{fullpage} % To use extended margins 
+\usepackage{gensymb} % to have the ¡ symbol
+\usepackage{epstopdf}
+\usepackage{subfigure}
+\usepackage{multirow}
+\usepackage{mathtools} % To use mathclap in equations
+\usepackage{bm} % To use \bm in order to get bold math symbols
+
+
+% Bibliography: only initials
+\usepackage[natbib = true,backend=bibtex,  sorting=none,giveninits=true,style=numeric-comp,maxcitenames=1,maxbibnames=6]{biblatex}
+\bibliography{supplementary/Biblio}
+
+
+\usepackage{titlesec} % to associate numbers to paragraphs (mimicking subsubsubsections)
+\setcounter{secnumdepth}{4} % to associate numbers to paragraphs (mimicking subsubsubsections)
+%%%%%%%%% End of the Preamble %%%%%%%%%
+
+	
+%%%%%%%%% GL Packages   %%%%%%%%%%%
+\usepackage[acronym,nonumberlist]{glossaries} 
+\usepackage{glossary-mcols}  
+\usepackage{glossary-longragged}
+%\usepackage{amssymb}
+\usepackage{lineno}
+\usepackage{longtable}
+\usepackage[font=small,skip=2pt]{caption}
+%\usepackage{amsmath}
+%\usepackage{amssymb}
+%\usepackage{eurosym}
+%\usepackage{graphics}
+%\usepackage{multirow}
+%\usepackage{url}
+%\usepackage{booktabs}
+\usepackage[version=4]{mhchem}
+\usepackage{siunitx}
+%\usepackage{glossaries}
+%\usepackage{varioref}
+%\usepackage{hyperref}
+\usepackage{cleveref}
+%\usepackage{subfigure}
+%
+%\usepackage{lscape}
+%\usepackage{rotating}
+%\usepackage{pdflscape} 
+\usepackage{pifont}% http://ctan.org/pkg/pifont
+\usepackage{pdfrender}
+\newcommand*{\boldcheckmark}{%
+  \textpdfrender{
+    TextRenderingMode=FillStroke,
+    LineWidth=.8pt, % half of the line width is outside the normal glyph
+  }{\checkmark}%
+}
+\usepackage[titletoc]{appendix}% http://ctan.org/pkg/appendices
+\newcommand{\xmark}{\ding{55}}%
+
+%SM
+\usepackage{pdflscape} % to use landscape environment
+
+% Definition of Symbols
+\newglossary[slg]{symbolslist}{syi}{syg}{List of Symbols}
+
+%\newglossaryentry{e}{name=\emph{e},description={Error factor}, user1={}, type=symbolslist, sort=error}
+%\newglossaryentry{theta}{name=$\theta$,description={Parameter}, user1={}, type=symbolslist, sort=hz}
+
+%% A
+\newacronym{AEO}{AEO}{Annual Energy Outlook}
+
+%% B
+\newacronym{BAU}{BAU}{Business-As-Usual}
+\newacronym{BEV}{BEV}{Battery Electric Vehicles}
+
+%% C
+\newacronym{CAPEX}{CAPEX}{Capital Expenditure}
+\newacronym{CCGT}{CCGT}{Combined Cycle Gas Turbine}
+\newacronym{CCS}{CCS}{Carbon Capture and Storage}
+\newacronym{CEPCI}{CEPCI}{Chemical Engineering's Plant Cost Index}
+\newacronym{CHP}{CHP}{Combined Heat and Power}
+\newacronym{CNG}{CNG}{Compressed Natural Gas}
+\newacronym{CO2}{CO\textsubscript{2}}{Carbon Dioxyde}
+\newacronym{COP}{COP}{Coefficient of Performance}
+
+%% D
+\newacronym{DEC}{DEC}{Decentralized}
+\newacronym{DHN}{DHN}{District Heating Network}
+\newacronym{DM}{DM}{Decision-Maker}
+
+%% E
+\newacronym{EE}{EE}{Elementary Effect}
+\newacronym{EIA}{EIA}{Energy Information Administration}
+\newacronym{ES}{EnergyScope}{EnergyScope}
+\newacronym{ESTD}{EnergyScope TD}{EnergyScope Typical Days}
+\newacronym{EO}{EO}{Expert Opinion}
+\newacronym{ESOM}{ESOM}{Energy System Optimisation Models}
+\newacronym{EU}{EU}{European Union}
+\newacronym{EUD}{EUD}{End-Use Demand}
+\newacronym{EUT}{EUT}{End-Use Type}
+\newacronym{EV}{EV}{Electric Vehicle}
+
+%% F
+\newacronym{FC}{FC}{Fuel Cell}
+\newacronym{FEC}{FEC}{Final Energy Consumption}
+
+%% G
+\newacronym{GHG}{GHG}{Greenhouse Gas}
+\newacronym{GSA}{GSA}{Global Sensitivity Analysis}
+\newacronym{GtP}{GtP}{Gas-to-Power}
+\newacronym{GWP}{GWP}{Global Warming Potential}
+
+%% H
+\newacronym{H2}{H2}{Hydrogen}
+\newacronym{HEV}{HEV}{Hybrid Electric Vehicle}
+\newacronym{HH}{HH}{households}
+\newacronym{HP}{HP}{Heat Pump}
+\newacronym{HT}{HT}{High-Temperature}
+\newacronym{HVC}{HVC}{High Value Chemicals}
+\newacronym{HW}{HW}{Hot Water}
+
+%% I
+\newacronym{ICE}{ICE}{Internal Combustion Engine}
+\newacronym{IEA}{IEA}{International Energy Agency}
+\newacronym{IGCC}{IGCC}{Integrated Gasification Combined Cycle}
+\newacronym{IPCC}{IPCC}{Intergovernmental Panel for Climate Change}
+
+%% J
+
+%% K
+\newacronym{KPI}{KPI}{Key Performance Indicator}
+
+%% L
+\newacronym{LCA}{LCA}{Life Cycle Assessment}
+\newacronym{LCOE}{LCOE}{Levelised Cost of Energy}
+\newacronym{LFO}{LFO}{Light Fuel Oil}
+\newacronym{LHV}{LHV}{Lower Heating Value}
+\newacronym{LNG}{LNG}{Liquified Natural Gas}
+\newacronym{LOO}{LOO}{Leave-One-Out}
+\newacronym{LP}{LP}{Linear Programming}
+\newacronym{LT}{LT}{Low-Temperature}
+
+%% M
+\newacronym{MILP}{MILP}{Mixed-Integer Linear Programming}
+\newacronym{MOB}{MOB}{Mobility}
+\newacronym{MPG}{MPG}{miles-per-gallon}
+\newacronym{MSW}{MSW}{Municipal Solid Waste}
+\newacronym{MTO}{MTO}{Methanol-to-Olefins}
+
+%% N
+\newacronym{NED}{NED}{Non-Energy Demand}
+\newacronym{NG}{NG}{Natural Gas}
+
+%% O
+\newacronym{OM}{O\&M}{Operation and Maintenance}
+\newacronym{Openmod}{Openmod}{Open Energy Modelling Initiative}
+\newacronym{OPEX}{OPEX}{Operational Expenditure}
+\newacronym{ORC}{ORC}{Organic Rankine cycle}
+
+%% P
+\newacronym{PCE}{PCE}{Polynomial Chaos Expansion}
+\newacronym{PDF}{PDF}{Probability Density Function}
+\newacronym{PF}{PF}{Perfect Foresight}
+\newacronym{PHEV}{PHEV}{Plug-in Hybrid Electric Vehicle}
+\newacronym{PHS}{PHS}{Pumped Hydro Storage}
+\newacronym{pkm}{pkm}{passenger-kilometer}
+\newacronym{PtG}{PtG}{Power-to-Gas}
+\newacronym{PtH}{PtH}{Power-to-Heat}
+\newacronym{PV}{PV}{Photovoltaic}
+
+%% Q
+
+%% R
+\newacronym{RL}{RL}{Reinforcement Learning}
+
+%% S
+\newacronym{SFOE}{SFOE}{Swiss Federal Office of Energy}
+\newacronym{SFOS}{SFOS}{Swiss Federal Office of Statistics}
+\newacronym{SH}{SH}{Space Heating}
+\newacronym{SMR}{SMR}{Small Modular Reactor}
+\newacronym{SNG}{SNG}{Synthetic Natural Gas}
+\newacronym{SAC}{SAC}{Soft Actor-Critic}
+\newacronym{SPC}{SPC}{Sparse Polynomial Chaos}
+
+%% T
+\newacronym{TCO}{TCO}{Total Cost of Ownership}
+\newacronym{TD}{TD}{Typical Day}
+\newacronym{tkm}{tkm}{ton-kilometer}
+\newacronym{TS}{TS}{Thermal Storage}
+\newacronym{TSO}{TSO}{Transmission System Operator}
+
+%% U
+\newacronym{U-S}{U-S}{Ultra-Supercritical}
+\newacronym{UQ}{UQ}{Uncertainty Quantification}
+
+%% V
+\newacronym{V2G}{V2G}{Vehicle-to-Grid}
+\newacronym{VRES}{VRES}{Variable Renewable Energy Sources}
+
+%% W
+
+%% X
+
+%% Y
+
+%% Z
+
+
+%\usepackage{subcaption}
+
+\usepackage{tablefootnote}
+
+\usepackage{makecell}
+
+
+\makeglossaries
+
+%%%%%%%%% End of the Glossary Stuff %%%%%%%%%
+
+%%%%%%%%% Beginning of the Report %%%%%%%%%
+\begin{document}
+
+%%%%%%%%% Beginning of the Title Page %%%%%%%%%
+\begin{titlepage}
+
+% To add the logos
+%\begin{figure*}[!htb]
+%\centering
+%\subfigure{\includegraphics[width=4cm]{figures/logos/logo_epfl.eps}}\hfill
+%\quad
+%\subfigure{\includegraphics[width=4.6cm]{figures/logos/logo_ipese.eps}}
+%\end{figure*}
+
+% To add the title
+\title{The atom-molecules dilemma of a whole-energy system with low local renewable potentials: deterministic and global sensitivity analyses}
+
+% To add the authors
+\author[1]{Xavier Rixhon\thanks{xavier.rixhon@uclouvain.be}}
+\author[1]{Hervé Jeanmart}
+\author[1]{Francesco Contino}
+
+
+%To add the affiliations
+\affil[1]{Institute of Mechanics, Materials and Civil Engineering, 
+Université catholique de Louvain, Belgium}
+
+
+
+
+
+\date{} %add date if you want to display it in the cover page
+{\let\newpage\relax\maketitle}
+
+% To add content to the title page
+%\setcounter{tocdepth}{2}
+\tableofcontents
+\printglossaries
+% To add footnote to the title page
+
+\end{titlepage}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%           CORE TEXT           %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\linenumbers
+%\linenumbers
+
+\section*{Abstract}
+% Background, Methods, Results, and Conclusions
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%           INTRO           %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Introduction}
+\label{sec:intro}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%           RESULTS  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\section{Results}
+\label{sec:results}
+
+
+\newpage
+\section{Interpretations and discussions}
+\label{sec:discussions}
+
+\acrfull{RL} was found to be an appropriate approach to explore myopic transition pathways under uncertainties and assess the robustness of policies to support such pathways. As a novice user of a \gls{RL} framework considering continuous action and state spaces, we would recommend opting for \gls{SAC} as it is sample efficient, ensures a wide exploration and has a low sensitivity to hyper-parameters \cite{haarnoja2018soft}. Using the \gls{SAC} package developed by \textsc{Stable-Baselines3} allows a handy introduction to apply \gls{RL}. 
+
+Besides the choice of the algorithm, most of the work when using a \gls{RL} framework consists in properly defining the rules of the games following which the agent interacts with its environment: action, state and reward. These are defined and discussed in Chapter \ref{chap:chap_RL}.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%           CONCLUSION %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Conclusions and further works}
+\label{sec:conclusion}
+
+\begin{appendices}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%           APP METHODO 		 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Definition of the actions, reward and states}
+\label{sec:RL:act_states_rew}
+As already introduced in Section \ref{subsec:meth_RL_algo}, the environment with which the \gls{RL}-agent interacts is the optimisation of the transition pathway of a whole-energy system on a specific time window, \eg 2020-2030 then 2025-2035 and so on, until 2040-2050 (see Figure \ref{fig:Schematics_RL}). In a nutshell, starting from the initial state of the environment (\ie the whole-energy system in 2020), the agent takes a set of actions that influence the environment, \ie that affects parameters of the Linear Programming in EnergyScope Pathway. Then, the window 2020-2030 is optimised via EnergyScope. Some of the outputs of this optimisation feed the agent with either the new state of the system or the reward, \ie telling the agent how good the actions were at the state the agent took it. Based on the new state and the reward, the agent takes another set of actions and the window 2025-2035 is optimised. This goes on until 2050.
+
+
+
+\subsection{Actions}
+\label{subsec:RL:act_states_rew:act}
+
+Defining the levers of action, the core of the policy, to support the transition of a country-size whole-energy system is challenging, especially when accounting for political and socio-technical aspects \cite{castrejon2020making}. In our work, focusing only on the techno-economic aspect, we assume that the actions taken by the agent are directly implemented and impact the environment. In other words, considering only the techno-economic lens, there is no moderation nor contest towards the agent's actions, as the objective is to assess how far and when within the transition to push the different levers of action. Given the overall objective of the agent to succeed the transition, \ie respecting the \ce{CO2} budget by 2050, we have defined the actions in this sense. The first action, $\mathrm{act}_{\mathrm{gwp}} \in [0,1]$, aims at limiting the emissions at the representative year ending the concerned time window, $\textbf{GWP\textsubscript{tot}}(y_{\text{end of the window}})$, between the level of emissions in 2020, \ie $\textbf{GWP\textsubscript{tot}}(2020)=123\,\text{Mt}_{\ce{CO2},\text{eq}}$, and carbon neutrality:
+
+\begingroup
+\belowdisplayskip=2pt
+\abovedisplayskip=2pt
+\begin{flalign} 
+\label{eq:RL:act_gwp}
+&\textbf{GWP\textsubscript{tot}}(y_{\text{end of the window}})\leq \mathrm{act}_{\mathrm{gwp}} \cdot \textbf{GWP\textsubscript{tot}}(2020). &
+\end{flalign}
+\endgroup
+
+\noindent
+This action is equivalent to setting a national \ce{CO2} quota.
+
+Three additional actions support the strict limitation of yearly emissions: limiting the consumption of oil, fossil gas and coal. Out of the total \gls{GHG} emissions in Belgium in 2020, oil (\ie so-called ``\gls{LFO}'' in the model) and fossil gas account for roughly 40\% and 31\%, respectively. In 2020, solid fossil fuels (\ie so-called ``coal'' in the model) is much less consumed than oil and gas: \ie 28\,TWh of solid fossil fuels versus 159 and 142\,TWh for oil and fossil gas, respectively. Even though its cost (17€/MWh) makes coal cost-competitive, it is a highly-emitting resource, 0.40\,kt$_{\ce{CO2},\text{eq}}$/GWh. For these reasons, three independent actions limit the consumption of these three fossil resources up to the level of consumption in 2020, $\textbf{Cons\textsubscript{fossil gas}}(2020)$, $\textbf{Cons\textsubscript{LFO}}(2020)$ and $\textbf{Cons\textsubscript{coal}}(2020)$,  over the entire concerned time window, except the first one as this year is the initial condition of the time window and cannot be optimised any more:
+
+\begingroup
+\belowdisplayskip=2pt
+\abovedisplayskip=2pt
+\begin{flalign} 
+\label{eq:RL:act_NG}
+&\textbf{Cons\textsubscript{fossil gas}}(y)\leq \mathrm{act}\textsubscript{fossil gas} \cdot \textbf{Cons\textsubscript{fossil gas}}(2020) & \forall y \in \text{time window}\\
+\label{eq:RL:act_LFO}
+&\textbf{Cons\textsubscript{LFO}}(y)\leq \mathrm{act}\textsubscript{LFO} \cdot \textbf{Cons\textsubscript{LFO}}(2020) & \forall y \in \text{time window}\\
+\label{eq:RL:act_COAL}
+&\textbf{Cons\textsubscript{coal}}(y)\leq \mathrm{act}\textsubscript{coal} \cdot \textbf{Cons\textsubscript{coal}}(2020) & \forall y \in \text{time window}
+\end{flalign}
+\endgroup
+
+\noindent
+where $\mathrm{act}\textsubscript{fossil gas}$, $\mathrm{act}\textsubscript{LFO}$ and $\mathrm{act}\textsubscript{coal}$ can take values between 0 and 1. These complete the action space of the agent, $A\in \mathbb{R}^4_{[0,1]}$ (see Figure \ref{fig:Schematic_actions}).
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=0.8\textwidth]{Schematic_actions.pdf}
+\caption{Actions available to the decision-maker. Taken at the beginning of the time window to optimise (year $Y$), the four actions impact (i) the emissions of the system at the end of the time window (year $Y+10$) and, (ii-iv) the consumption of fossil gas, LFO and coal at years $Y+5$ and $Y+10$. Unlike the first action that sets a target for the end of the time window, the last three aim at limiting the consumption of these fossil resources over the whole time window.}
+\label{fig:Schematic_actions}
+\end{figure} 
+
+\subsection{Reward}
+\label{subsec:RL:act_states_rew:rew}
+
+When the reward is not properly defined, the agent may optimise its policy for an unintended objective, leading to undesired or suboptimal behaviour, \ie the so-called misalignment of the learning objective \cite{christiano2017deep}. Even worse, it can lead to reward hacking (or reward tampering) where the agent exploits loopholes in the reward function to achieve higher rewards without actually performing the desired task \cite{amodei2016concrete}. On the contrary, a proper definition of the reward function increases the sample efficiency, \ie requiring fewer episodes to converge to the optimal policy.  It also makes the policy more stable and able to withstand variations and uncertainties in the environment \cite{henderson2018deep}.
+
+Through its maximisation of the expected return (see Section \ref{subsec:meth_RL_algo}), a \gls{RL}-agent is as sensitive to positive reward, \ie the carrot, as negative reward, \ie the stick.  When the former encourages desired behaviours, the latter can be seen as a penalty or a punishment and discourages undesirable behaviours \cite{sutton2018reinforcement}. In our case, we have decided to combine these two approaches (see Figure \ref{fig:Reward}).
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=0.8\textwidth]{Reward.pdf}
+\caption{Reward function, $R$. Before 2050, the episode is prematurely ended and a negative reward is given if the optimisation is infeasible or if the \ce{CO2} budget is exceeded. If the optimisation provides a solution and the \ce{CO2} budget is not exceeded, the episode continues. Finally, if the episode goes until 2050, the reward is a weighted sum between the capped cumulative emissions and the total transition cost, and the episode terminates. After terminating an episode, the process starts over at the initial state, \ie 2020.}
+\label{fig:Reward}
+\end{figure} 
+
+\newpage
+The reward function is defined in three steps. First of all, taking a set of actions at a certain state might lead to an infeasible optimisation problem. In other words, as actions have a direct impact on some constraints of the problem, they might limit too much the feasible domain to the point where no solution can be found. For instance, the extreme case of aiming at carbon neutrality, \ie $\mathrm{act}_{\mathrm{gwp}}=0$, and forbidding the use of the three aforementioned fossil fuels, \ie $\mathrm{act}\textsubscript{fossil gas}=\mathrm{act}\textsubscript{LFO}=\mathrm{act}\textsubscript{coal}=0$,  from the beginning of the transition makes the optimisation impossible to solve. In this case, the episode is prematurely ended and the reward is ``highly'' negative, -300. If the optimisation is feasible and the end of the transition, \ie 2050, is not reached, the cumulative emissions so far are evaluated. On the one hand, if these cumulative emissions exceed the \ce{CO2} budget, $1.2\,\text{Gt}_{\ce{CO2},\text{eq}}$ (see Section \ref{sec:cs:CO2-budget}), the episode is also ended and a penalisation is given to the agent. This penalisation is proportional to the difference between the \ce{CO2} budget and the actual cumulative emissions.  On the other hand, the episode continues with a zero reward if the \ce{CO2} budget is not exceeded. Eventually, when reaching 2050, given the main objective of the agent to respect the \ce{CO2} budget and not to be more ``\ce{CO2}-ambitious'', we cut short the contribution of the cumulative emissions as soon as they are lower or equal to the \ce{CO2} budget.  On top of that, the reward function includes a secondary objective: the cumulative transition cost. To make the agent sensitive to the cost impact of its policy, we added the total transition cost in the reward function where the \emph{Trans. cost$_{\text{ref}}$} on Figure \ref{fig:Reward} is equal to $1.1\cdot10^3$\,b€. This value comes from the mean of the total transition costs obtained through the \gls{GSA} performed on the perfect foresight transition pathway optimisation (see Section \ref{subsec:atom_mol:results_uq_cost}). In this final form of the reward, one will notice that overshooting cumulative emissions is more penalising than an overshooting transition cost, \ie a weight of 200 for the emissions versus 100 for the cost. The values of these weights are the results of a trial and error to fine-tune the balance between more expensive successes and cheaper failures. This way, we observed that the agent first targeted the respect of the \ce{CO2} budget and then, to a lesser scale, avoided reaching over-costly transitions.
+
+\subsection{States}
+\label{subsec:RL:act_states_rew:states}
+
+Besides the reward, the states are the other piece of information provided by the environment to the agent. In \gls{RL}, the purpose of states is to represent the current situation or configuration of the environment in which the agent operates. The primary function of states in RL is to provide the necessary context for the agent to choose appropriate actions based on its current observations and goals \cite{sutton2018reinforcement}. The challenge in the definition of the states is to provide enough information but not too much to avoid overwhelming the agent with non-informative features. 
+
+Consequently, after testing several state spaces and observing the convergence of the reward, we have converged to a four-dimensional state space characterizing the energy system at the end of the optimised time window. The first dimension is directly related to the main objective of the agent: respecting the \ce{CO2} budget until 2050. Therefore, the cumulative emissions emitted so far up to the current step of the transition is the first dimension of the states. Similarly, the cumulative cost of the transition so far constitutes the second dimension of the states to inform the agent about the cost-impact of its actions on the environment. Finally, to enrich the level of details, we have added two other dimensions representative of the key-to-the-transition indicators identified in the Renewable Energy Directive (RED) III of the European Commission \cite{REDIII}: the share of renewables in the primary energy mix and, the energy efficiency. The former is computed as the share of local renewables (\ie wind, solar, hydro and biomass) and imported renewable energy carriers (\ie biofuels and electrofuels) in the total consumption of primary energy. Electricity imported from abroad is not considered in the set of renewable energy carriers even if it can be assumed to be fully renewable by 2050. Finally, even though energy efficiency is usually defined as the ratio between the \gls{FEC} and the primary energy mix, we decided to define this efficiency with a focus on the \gls{EUD}, like in the rest of this thesis. Where electricity, heat and non-energy \gls{EUD} are expressed in terms of energy content, we needed to convert passenger and freight transports into their respective \gls{FEC} to integrate them in the ratio. The information of efficiency fed back by the environment to the agent is the ratio between a ``hybrid'' \gls{EUD} and the consumption of primary energy resources.
+
+\section{Methodology}
+\label{sec:methodo}
+The core of this section is, on the one hand, to introduce the model used in this analysis, EnergyScope Pathway \cite{limpens2024pathway} and, on the other hand, to introduce the framework that assesses the impact of uncertainties on the output of interest of the model (\eg total transition cost, amount of imported electrofuels or installed capacity of \gls{SMR}). To do so, the second part of this section focuses on the uncertainty characterisation developed by \citet{Moret2017} and the uncertainty quantification using \acrfull{PCE} \cite{Sudret2014}.
+
+
+
+
+\end{appendices}
+
+
+\newpage
+
+\section*{Acknowledgement}
+Authors acknowledge the support of the Energy Transition Fund of Belgium.
+
+%\section{References}
+% If not using biblatex
+% To set the bibliography style
+%\bibliographystyle{unsrt} 
+%\bibliography{bibliography/biblio}{}
+% If using biblatex
+\printbibliography[heading=bibintoc]
+\end{document}
+%%%%%%%%% End of the Report %%%%%%%%%
