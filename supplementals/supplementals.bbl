@@ -1,0 +1,96 @@
+\begin{thebibliography}{10}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\href}[2]{#2}
+\providecommand{\path}[1]{#1}
+\providecommand{\DOIprefix}{doi: }
+\providecommand{\ArXivprefix}{arXiv: }
+\providecommand{\URLprefix}{URL: }
+\providecommand{\Pubmedprefix}{pmid: }
+\providecommand{\doi}[1]{\href{http://dx.doi.org/#1}{\path{#1}}}
+\providecommand{\Pubmed}[1]{\href{pmid:#1}{\path{#1}}}
+\providecommand{\BIBand}{and}
+\providecommand{\bibinfo}[2]{#2}
+\ifx\xfnm\undefined \def\xfnm[#1]{\unskip,\space#1}\fi
+\makeatletter\def\@biblabel#1{#1.}\makeatother
+%Type = Article
+\bibitem[{Cao et~al.(2020)Cao, Hu, Zhao, Zhang, Zhang, Liu, Chen and
+  Blaabjerg}]{cao2020reinforcement}
+\bibinfo{author}{Cao, D.}, \bibinfo{author}{Hu, W.}, \bibinfo{author}{Zhao,
+  J.}, \bibinfo{author}{Zhang, G.}, \bibinfo{author}{Zhang, B.},
+  \bibinfo{author}{Liu, Z.}, \bibinfo{author}{Chen, Z.}, and
+  \bibinfo{author}{Blaabjerg, F.} (\bibinfo{year}{2020}).
+  \bibinfo{title}{Reinforcement learning and its applications in modern power
+  and energy systems: A review}.
+\newblock \bibinfo{journal}{Journal of modern power systems and clean energy}
+  \emph{\bibinfo{volume}{8}}, \bibinfo{pages}{1029--1042}.
+%Type = Book
+\bibitem[{Sutton and Barto(2018)}]{sutton2018reinforcement}
+\bibinfo{author}{Sutton, R.S.}, and \bibinfo{author}{Barto, A.G.}
+  (\bibinfo{year}{2018}). \bibinfo{title}{Reinforcement learning: An
+  introduction}. \bibinfo{publisher}{MIT press}.
+%Type = Misc
+\bibitem[{{David Silver}(2016)}]{davidsilver_RL_online}
+\bibinfo{author}{{David Silver}} (\bibinfo{year}{2016}).
+\newblock \bibinfo{title}{{RL Course by David Silver}}.
+\newblock
+  \bibinfo{howpublished}{\url{https://www.youtube.com/watch?v=2pWv7GOvuf0&list=PLzuuYNsE1EZAXYR4FJ75jcJseBmo4KQ9-}}.
+  .
+%Type = Inproceedings
+\bibitem[{Haarnoja et~al.(2018)Haarnoja, Zhou, Abbeel and
+  Levine}]{haarnoja2018soft}
+\bibinfo{author}{Haarnoja, T.}, \bibinfo{author}{Zhou, A.},
+  \bibinfo{author}{Abbeel, P.}, and \bibinfo{author}{Levine, S.}
+  (\bibinfo{year}{2018}). \bibinfo{title}{Soft actor-critic: Off-policy maximum
+  entropy deep reinforcement learning with a stochastic actor}.
+\newblock In \bibinfo{booktitle}{International conference on machine learning}.
+  \bibinfo{organization}{PMLR} pp. \bibinfo{pages}{1861--1870}.
+%Type = Article
+\bibitem[{Perera and Kamalaruban(2021)}]{perera2021applications}
+\bibinfo{author}{Perera, A.}, and \bibinfo{author}{Kamalaruban, P.}
+  (\bibinfo{year}{2021}). \bibinfo{title}{Applications of reinforcement
+  learning in energy systems}.
+\newblock \bibinfo{journal}{Renewable and Sustainable Energy Reviews}
+  \emph{\bibinfo{volume}{137}}, \bibinfo{pages}{110618}.
+%Type = Inproceedings
+\bibitem[{Haarnoja et~al.(2017)Haarnoja, Tang, Abbeel and
+  Levine}]{haarnoja2017reinforcement}
+\bibinfo{author}{Haarnoja, T.}, \bibinfo{author}{Tang, H.},
+  \bibinfo{author}{Abbeel, P.}, and \bibinfo{author}{Levine, S.}
+  (\bibinfo{year}{2017}). \bibinfo{title}{Reinforcement learning with deep
+  energy-based policies}.
+\newblock In \bibinfo{booktitle}{International conference on machine learning}.
+  \bibinfo{organization}{PMLR} pp. \bibinfo{pages}{1352--1361}.
+%Type = Book
+\bibitem[{Ziebart(2010)}]{ziebart2010modeling}
+\bibinfo{author}{Ziebart, B.D.} (\bibinfo{year}{2010}).
+  \bibinfo{title}{Modeling purposeful adaptive behavior with the principle of
+  maximum causal entropy}. \bibinfo{publisher}{Carnegie Mellon University}.
+%Type = Article
+\bibitem[{Raffin et~al.(2021)Raffin, Hill, Gleave, Kanervisto, Ernestus and
+  Dormann}]{raffin2021stable}
+\bibinfo{author}{Raffin, A.}, \bibinfo{author}{Hill, A.},
+  \bibinfo{author}{Gleave, A.}, \bibinfo{author}{Kanervisto, A.},
+  \bibinfo{author}{Ernestus, M.}, and \bibinfo{author}{Dormann, N.}
+  (\bibinfo{year}{2021}). \bibinfo{title}{Stable-baselines3: Reliable
+  reinforcement learning implementations}.
+\newblock \bibinfo{journal}{The Journal of Machine Learning Research}
+  \emph{\bibinfo{volume}{22}}, \bibinfo{pages}{12348--12355}.
+%Type = Article
+\bibitem[{Abadi et~al.(2016)Abadi, Agarwal, Barham, Brevdo, Chen, Citro,
+  Corrado, Davis, Dean, Devin et~al.}]{abadi2016tensorflow}
+\bibinfo{author}{Abadi, M.}, \bibinfo{author}{Agarwal, A.},
+  \bibinfo{author}{Barham, P.}, \bibinfo{author}{Brevdo, E.},
+  \bibinfo{author}{Chen, Z.}, \bibinfo{author}{Citro, C.},
+  \bibinfo{author}{Corrado, G.S.}, \bibinfo{author}{Davis, A.},
+  \bibinfo{author}{Dean, J.}, \bibinfo{author}{Devin, M.} et~al.
+  (\bibinfo{year}{2016}). \bibinfo{title}{Tensorflow: Large-scale machine
+  learning on heterogeneous distributed systems}.
+\newblock \bibinfo{journal}{arXiv preprint arXiv:1603.04467}.
+%Type = Book
+\bibitem[{Bertsimas and Tsitsiklis(1997)}]{bertsimas1997introduction}
+\bibinfo{author}{Bertsimas, D.}, and \bibinfo{author}{Tsitsiklis, J.N.}
+  (\bibinfo{year}{1997}). \bibinfo{title}{Introduction to linear optimization}
+  vol.~\bibinfo{volume}{6}. \bibinfo{publisher}{Athena Scientific Belmont, MA}.
+
+\end{thebibliography}

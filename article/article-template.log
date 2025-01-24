@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.22)  24 JAN 2025 11:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.22)  24 JAN 2025 11:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1054,22 +1054,26 @@ File: figures//Success_rate.pdf Graphic file (type pdf)
 Package pdftex.def Info: figures//Success_rate.pdf  used on input line 346.
 (pdftex.def)             Requested size: 247.88887pt x 198.25146pt.
  [3 <./figures//Mean_reward.pdf> <./figures//Success_rate.pdf>]
-<figures//Reward_status.pdf, id=142, 376.40613pt x 301.12485pt>
+
+LaTeX Warning: Reference `sec:RL:act_states_rew' on page 4 undefined on input l
+ine 352.
+
+<figures//Reward_status.pdf, id=141, 376.40613pt x 301.12485pt>
 File: figures//Reward_status.pdf Graphic file (type pdf)
 <use figures//Reward_status.pdf>
 Package pdftex.def Info: figures//Reward_status.pdf  used on input line 358.
 (pdftex.def)             Requested size: 247.88887pt x 198.31569pt.
-<figures//Reward_status_2.pdf, id=143, 376.40631pt x 301.12503pt>
+<figures//Reward_status_2.pdf, id=142, 376.40631pt x 301.12503pt>
 File: figures//Reward_status_2.pdf Graphic file (type pdf)
 <use figures//Reward_status_2.pdf>
 Package pdftex.def Info: figures//Reward_status_2.pdf  used on input line 359.
 (pdftex.def)             Requested size: 247.88887pt x 198.31581pt.
-<figures//Cum_gwp_cost_3.pdf, id=146, 1084.05pt x 1084.05pt>
+<figures//Cum_gwp_cost_3.pdf, id=145, 1084.05pt x 1084.05pt>
 File: figures//Cum_gwp_cost_3.pdf Graphic file (type pdf)
 <use figures//Cum_gwp_cost_3.pdf>
 Package pdftex.def Info: figures//Cum_gwp_cost_3.pdf  used on input line 371.
 (pdftex.def)             Requested size: 404.71353pt x 404.71475pt.
- [4 <./figures//Reward_status.pdf> <./figures//Reward_status_2.pdf
+[4 <./figures//Reward_status.pdf> <./figures//Reward_status_2.pdf
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./figures//Reward_status_2.p
 df): PDF inclusion: multiple pdfs with page group included in a single page
@@ -1089,18 +1093,21 @@ LaTeX Warning: Reference `chap:atom_mol' on page 6 undefined on input line 415.
 
 
 [6]
-<figures//RE_in_mix_Efficiency.pdf, id=382, 1084.05pt x 1084.05pt>
+
+LaTeX Warning: Reference `sec:RL:act_states_rew' on page 7 undefined on input l
+ine 417.
+
+<figures//RE_in_mix_Efficiency.pdf, id=379, 1084.05pt x 1084.05pt>
 File: figures//RE_in_mix_Efficiency.pdf Graphic file (type pdf)
 <use figures//RE_in_mix_Efficiency.pdf>
 Package pdftex.def Info: figures//RE_in_mix_Efficiency.pdf  used on input line 
 421.
 (pdftex.def)             Requested size: 404.71353pt x 404.71475pt.
 
-
 LaTeX Warning: Reference `fig:Actions_learning' on page 7 undefined on input li
 ne 429.
 
-<figures//Binding_learning.pdf, id=386, 1084.04964pt x 1084.05pt>
+<figures//Binding_learning.pdf, id=383, 1084.04964pt x 1084.05pt>
 File: figures//Binding_learning.pdf Graphic file (type pdf)
 <use figures//Binding_learning.pdf>
 Package pdftex.def Info: figures//Binding_learning.pdf  used on input line 435.
@@ -1118,65 +1125,126 @@ LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <12> not available
 LaTeX Warning: Reference `sec:cs:CO2-budget' on page 10 undefined on input line
  459.
 
-[10] [11] [12] [13]
-<figures//RL_Fundamentals.pdf, id=739, 280.04625pt x 155.58125pt>
+[10] [11]
+
+LaTeX Warning: Reference `subsec:uncert_charac' on page 12 undefined on input l
+ine 488.
+
+
+LaTeX Warning: Reference `sec:cs:CO2-budget' on page 12 undefined on input line
+ 490.
+
+[12]
+<figures//Schematic_actions.pdf, id=726, 812.03375pt x 387.4475pt>
+File: figures//Schematic_actions.pdf Graphic file (type pdf)
+<use figures//Schematic_actions.pdf>
+Package pdftex.def Info: figures//Schematic_actions.pdf  used on input line 531
+.
+(pdftex.def)             Requested size: 404.71353pt x 193.0966pt.
+
+
+LaTeX Warning: Reference `subsec:meth_RL_algo' on page 13 undefined on input li
+ne 541.
+
+[13 <./figures//Schematic_actions.pdf>]
+<figures//Reward.pdf, id=770, 529.98pt x 864.22874pt>
+File: figures//Reward.pdf Graphic file (type pdf)
+<use figures//Reward.pdf>
+Package pdftex.def Info: figures//Reward.pdf  used on input line 545.
+(pdftex.def)             Requested size: 404.71353pt x 659.95918pt.
+
+
+LaTeX Warning: Float too large for page by 36.76114pt on input line 548.
+
+[14] [15 <./figures//Reward.pdf>]
+
+LaTeX Warning: Reference `sec:cs:CO2-budget' on page 16 undefined on input line
+ 551.
+
+LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <8> not available
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 551.
+LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <6> not available
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 551.
+
+LaTeX Warning: Reference `subsec:atom_mol:results_uq_cost' on page 16 undefined
+ on input line 551.
+
+[16] [17] [18]
+<figures//RL_Fundamentals.pdf, id=856, 280.04625pt x 155.58125pt>
 File: figures//RL_Fundamentals.pdf Graphic file (type pdf)
 <use figures//RL_Fundamentals.pdf>
-Package pdftex.def Info: figures//RL_Fundamentals.pdf  used on input line 615.
+Package pdftex.def Info: figures//RL_Fundamentals.pdf  used on input line 711.
 (pdftex.def)             Requested size: 151.76854pt x 84.31885pt.
- [14 <./figures//RL_Fundamentals.pdf>]
-<figures//Gwp_pathway_core.pdf, id=769, 903.375pt x 414.04688pt>
+
+
+LaTeX Warning: Reference `chap:chap_RL' on page 19 undefined on input line 718.
+
+
+[19 <./figures//RL_Fundamentals.pdf>]
+<figures//Actor-critic.pdf, id=884, 406.51875pt x 291.0875pt>
+File: figures//Actor-critic.pdf Graphic file (type pdf)
+<use figures//Actor-critic.pdf>
+Package pdftex.def Info: figures//Actor-critic.pdf  used on input line 726.
+(pdftex.def)             Requested size: 252.94499pt x 181.12085pt.
+ [20 <./figures//Actor-critic.pdf>]
+<figures//Gwp_pathway_core.pdf, id=915, 903.375pt x 414.04688pt>
 File: figures//Gwp_pathway_core.pdf Graphic file (type pdf)
 <use figures//Gwp_pathway_core.pdf>
-Package pdftex.def Info: figures//Gwp_pathway_core.pdf  used on input line 634.
+Package pdftex.def Info: figures//Gwp_pathway_core.pdf  used on input line 754.
 
 (pdftex.def)             Requested size: 310.39655pt x 142.26378pt.
-<figures//Transition_cost_comp_2.pdf, id=770, 303.78873pt x 375.91832pt>
+<figures//Transition_cost_comp_2.pdf, id=916, 303.78873pt x 375.91832pt>
 File: figures//Transition_cost_comp_2.pdf Graphic file (type pdf)
 <use figures//Transition_cost_comp_2.pdf>
 Package pdftex.def Info: figures//Transition_cost_comp_2.pdf  used on input lin
-e 635.
+e 755.
 (pdftex.def)             Requested size: 114.9681pt x 142.26378pt.
-<figures//Opex_2050_comp_core.pdf, id=772, 376.40579pt x 414.04681pt>
+
+[21]
+<figures//Opex_2050_comp_core.pdf, id=932, 376.40579pt x 414.04681pt>
 File: figures//Opex_2050_comp_core.pdf Graphic file (type pdf)
 <use figures//Opex_2050_comp_core.pdf>
-Package pdftex.def Info: figures//Opex_2050_comp_core.pdf  used on input line 6
-44.
+Package pdftex.def Info: figures//Opex_2050_comp_core.pdf  used on input line 7
+64.
 (pdftex.def)             Requested size: 164.4127pt x 180.86072pt.
-<figures//Capex_2050_comp_core.pdf, id=773, 376.40579pt x 414.04688pt>
+<figures//Capex_2050_comp_core.pdf, id=933, 376.40579pt x 414.04688pt>
 File: figures//Capex_2050_comp_core.pdf Graphic file (type pdf)
 <use figures//Capex_2050_comp_core.pdf>
 Package pdftex.def Info: figures//Capex_2050_comp_core.pdf  used on input line 
-645.
+765.
 (pdftex.def)             Requested size: 164.4127pt x 180.86075pt.
-<figures//Salvage_2050_comp_core.pdf, id=774, 376.40579pt x 414.04678pt>
+<figures//Salvage_2050_comp_core.pdf, id=934, 376.40579pt x 414.04678pt>
 File: figures//Salvage_2050_comp_core.pdf Graphic file (type pdf)
 <use figures//Salvage_2050_comp_core.pdf>
 Package pdftex.def Info: figures//Salvage_2050_comp_core.pdf  used on input lin
-e 646.
+e 766.
 (pdftex.def)             Requested size: 164.4127pt x 180.86072pt.
 
 
-LaTeX Warning: Reference `chap:case_study' on page 15 undefined on input line 6
-51.
+LaTeX Warning: Reference `chap:case_study' on page 22 undefined on input line 7
+71.
 
 
-LaTeX Warning: Reference `chap:atom_mol' on page 15 undefined on input line 651
+LaTeX Warning: Reference `chap:atom_mol' on page 22 undefined on input line 771
 .
 
-[15 <./figures//Gwp_pathway_core.pdf> <./figures//Transition_cost_comp_2.pdf
+<figures//Mix_2050_comp_core.pdf, id=938, 903.375pt x 414.04681pt>
+File: figures//Mix_2050_comp_core.pdf Graphic file (type pdf)
+<use figures//Mix_2050_comp_core.pdf>
+Package pdftex.def Info: figures//Mix_2050_comp_core.pdf  used on input line 77
+5.
+(pdftex.def)             Requested size: 404.71353pt x 185.49802pt.
+[22 <./figures//Gwp_pathway_core.pdf> <./figures//Transition_cost_comp_2.pdf
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./figures//Transition_cost_c
 omp_2.pdf): PDF inclusion: multiple pdfs with page group included in a single p
 age
->]
-<figures//Mix_2050_comp_core.pdf, id=871, 903.375pt x 414.04681pt>
-File: figures//Mix_2050_comp_core.pdf Graphic file (type pdf)
-<use figures//Mix_2050_comp_core.pdf>
-Package pdftex.def Info: figures//Mix_2050_comp_core.pdf  used on input line 65
-5.
-(pdftex.def)             Requested size: 404.71353pt x 185.49802pt.
- [16 <./figures//Opex_2050_comp_core.pdf> <./figures//Capex_2050_comp_core.pdf
+> <./figures//Opex_2050_comp_core.pdf
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./figures//Opex_2050_comp_co
+re.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+
+> <./figures//Capex_2050_comp_core.pdf
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./figures//Capex_2050_comp_c
 ore.pdf): PDF inclusion: multiple pdfs with page group included in a single pag
@@ -1186,71 +1254,14 @@ e
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./figures//Salvage_2050_comp
 _core.pdf): PDF inclusion: multiple pdfs with page group included in a single p
 age
-> <./figures//Mix_2050_comp_core.pdf
-
-pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./figures//Mix_2050_comp_cor
-e.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-<figures//Binding_constr.pdf, id=1062, 411.5375pt x 257.96375pt>
+<figures//Binding_constr.pdf, id=1166, 411.5375pt x 257.96375pt>
 File: figures//Binding_constr.pdf Graphic file (type pdf)
 <use figures//Binding_constr.pdf>
-Package pdftex.def Info: figures//Binding_constr.pdf  used on input line 666.
+Package pdftex.def Info: figures//Binding_constr.pdf  used on input line 786.
 (pdftex.def)             Requested size: 354.12144pt x 221.97438pt.
-
-
-LaTeX Warning: Reference `subsec:uncert_charac' on page 17 undefined on input l
-ine 672.
-
-
-LaTeX Warning: Reference `sec:cs:CO2-budget' on page 17 undefined on input line
- 674.
-
-[17 <./figures//Binding_constr.pdf>]
-
-LaTeX Warning: Reference `chap:chap_RL' on page 18 undefined on input line 676.
-
-
-<figures//Actor-critic.pdf, id=1101, 406.51875pt x 291.0875pt>
-File: figures//Actor-critic.pdf Graphic file (type pdf)
-<use figures//Actor-critic.pdf>
-Package pdftex.def Info: figures//Actor-critic.pdf  used on input line 684.
-(pdftex.def)             Requested size: 252.94499pt x 181.12085pt.
-[18 <./figures//Actor-critic.pdf>] [19]
-<figures//Schematic_actions.pdf, id=1147, 812.03375pt x 387.4475pt>
-File: figures//Schematic_actions.pdf Graphic file (type pdf)
-<use figures//Schematic_actions.pdf>
-Package pdftex.def Info: figures//Schematic_actions.pdf  used on input line 744
-.
-(pdftex.def)             Requested size: 404.71353pt x 193.0966pt.
-
-
-LaTeX Warning: Reference `subsec:meth_RL_algo' on page 20 undefined on input li
-ne 754.
-
-[20 <./figures//Schematic_actions.pdf>]
-<figures//Reward.pdf, id=1188, 529.98pt x 864.22874pt>
-File: figures//Reward.pdf Graphic file (type pdf)
-<use figures//Reward.pdf>
-Package pdftex.def Info: figures//Reward.pdf  used on input line 758.
-(pdftex.def)             Requested size: 404.71353pt x 659.95918pt.
-
-
-LaTeX Warning: Float too large for page by 36.76114pt on input line 761.
-
-[21] [22 <./figures//Reward.pdf>]
-
-LaTeX Warning: Reference `sec:cs:CO2-budget' on page 23 undefined on input line
- 764.
-
-LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <8> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 764.
-LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <6> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 764.
-
-LaTeX Warning: Reference `subsec:atom_mol:results_uq_cost' on page 23 undefined
- on input line 764.
-
-[23] (./article-template.bbl [24]) [25] (./article-template.aux)
+ (./article-template.bbl [23 <./figures//Mix_2050_comp_core.pdf>] [24 <./figure
+s//Binding_constr.pdf>]) [25] (./article-template.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -1258,10 +1269,10 @@ Package rerunfilecheck Info: File `article-template.out' has not changed.
 (rerunfilecheck)             Checksum: F9FCB7A89425D20F2FB6E8DB16B4492B;134.
  ) 
 Here is how much of TeX's memory you used:
- 30505 strings out of 478268
- 561121 string characters out of 5846347
- 885845 words of memory out of 5000000
- 48037 multiletter control sequences out of 15000+600000
+ 30506 strings out of 478268
+ 561114 string characters out of 5846347
+ 885803 words of memory out of 5000000
+ 48040 multiletter control sequences out of 15000+600000
  505482 words of font info for 103 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,14n,103p,2723b,799s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1285,10 +1296,10 @@ st/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2022/texm
 f-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2022/texmf-dist/
 fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/t
 ype1/urw/helvetic/uhvro8a.pfb>
-Output written on article-template.pdf (25 pages, 728395 bytes).
+Output written on article-template.pdf (25 pages, 728547 bytes).
 PDF statistics:
- 1357 PDF objects out of 1440 (max. 8388607)
- 954 compressed objects within 10 object streams
- 103 named destinations out of 1000 (max. 500000)
+ 1352 PDF objects out of 1440 (max. 8388607)
+ 949 compressed objects within 10 object streams
+ 101 named destinations out of 1000 (max. 500000)
  116 words of extra memory for PDF output out of 10000 (max. 10000000)
 

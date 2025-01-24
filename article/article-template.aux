@@ -50,32 +50,39 @@
 \citation{perera2021applications}
 \citation{haarnoja2018soft}
 \citation{pickering2022diversity}
+\citation{castrejon2020making}
+\newlabel{subsec:RL:act_states_rew:act}{{1}{12}{Actions}{section*.13}{}}
+\newlabel{eq:RL:act_gwp}{{1}{12}{Actions}{equation.1.1}{}}
+\citation{christiano2017deep}
+\citation{amodei2016concrete}
+\citation{henderson2018deep}
+\citation{sutton2018reinforcement}
+\newlabel{eq:RL:act_NG}{{2}{13}{Actions}{equation.1.2}{}}
+\newlabel{eq:RL:act_LFO}{{3}{13}{Actions}{equation.1.3}{}}
+\newlabel{eq:RL:act_COAL}{{4}{13}{Actions}{equation.1.4}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Actions available to the decision-maker. Taken at the beginning of the time window to optimise (year $Y$), the four actions impact (i) the emissions of the system at the end of the time window (year $Y+10$) and, (ii-iv) the consumption of fossil gas, LFO and coal at years $Y+5$ and $Y+10$. Unlike the first action that sets a target for the end of the time window, the last three aim at limiting the consumption of these fossil resources over the whole time window.}}{13}{figure.7}\protected@file@percent }
+\newlabel{fig:Schematic_actions}{{7}{13}{Actions available to the decision-maker. Taken at the beginning of the time window to optimise (year $Y$), the four actions impact (i) the emissions of the system at the end of the time window (year $Y+10$) and, (ii-iv) the consumption of fossil gas, LFO and coal at years $Y+5$ and $Y+10$. Unlike the first action that sets a target for the end of the time window, the last three aim at limiting the consumption of these fossil resources over the whole time window}{figure.7}{}}
+\newlabel{subsec:RL:act_states_rew:rew}{{1}{13}{Reward}{section*.14}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Reward function, $R$. Before 2050, the episode is prematurely ended and a negative reward is given if the optimisation is infeasible or if the \ce {CO2} budget is exceeded. If the optimisation provides a solution and the \ce {CO2} budget is not exceeded, the episode continues. Finally, if the episode goes until 2050, the reward is a weighted sum between the capped cumulative emissions and the total transition cost, and the episode terminates. After terminating an episode, the process starts over at the initial state, i.e., 2020.}}{15}{figure.8}\protected@file@percent }
+\newlabel{fig:Reward}{{8}{15}{Reward function, $R$. Before 2050, the episode is prematurely ended and a negative reward is given if the optimisation is infeasible or if the \ce {CO2} budget is exceeded. If the optimisation provides a solution and the \ce {CO2} budget is not exceeded, the episode continues. Finally, if the episode goes until 2050, the reward is a weighted sum between the capped cumulative emissions and the total transition cost, and the episode terminates. After terminating an episode, the process starts over at the initial state, \ie 2020}{figure.8}{}}
+\citation{sutton2018reinforcement}
+\citation{REDIII}
+\newlabel{subsec:RL:act_states_rew:states}{{1}{16}{States}{section*.15}{}}
 \citation{cao2020reinforcement}
 \citation{sutton2018reinforcement}
 \citation{sutton2018reinforcement}
 \citation{davidsilver_RL_online}
-\newlabel{subsec:meth_RL_fundamentals}{{1}{14}{Reinforcement Learning fundamentals}{section*.24}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces General concept of \acrfull {RL} as the interactions between the agent and its environment. The agent takes some action that has an impact on the environment which feeds back the agent with a reward and the new state. The objective of the agent is to optimise its policy, i.e., the mapping between the state it is at and the action to take, by maximising its cumulative reward.}}{14}{figure.7}\protected@file@percent }
-\newlabel{fig:RL_Fundamentals}{{7}{14}{General concept of \acrfull {RL} as the interactions between the agent and its environment. The agent takes some action that has an impact on the environment which feeds back the agent with a reward and the new state. The objective of the agent is to optimise its policy, \ie the mapping between the state it is at and the action to take, by maximising its cumulative reward}{figure.7}{}}
-\newlabel{subsec:comp_PF}{{1}{14}{Comparison with perfect foresight under uncertainties}{section*.25}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Comparison of \ce {CO2} emissions pathways (left) and total transition cost (right) from the perfect foresight optimisation under uncertainties and the \gls *{RL}-based myopic optimisation. Myopic transitions succeed with a more drastic reduction of emissions in the short term and, on average, more favourable economic conditions.}}{15}{figure.8}\protected@file@percent }
-\newlabel{fig:Gwp_pathway_total_tran_cost}{{8}{15}{Comparison of \ce {CO2} emissions pathways (left) and total transition cost (right) from the perfect foresight optimisation under uncertainties and the \gls *{RL}-based myopic optimisation. Myopic transitions succeed with a more drastic reduction of emissions in the short term and, on average, more favourable economic conditions}{figure.8}{}}
-\citation{bertsimas1997introduction}
-\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Comparison of cumulative OPEX (left), CAPEX (centre) and salvage value (right) in 2050 from the perfect foresight optimisation under uncertainties and the \gls *{RL}-based myopic optimisation.}}{16}{figure.9}\protected@file@percent }
-\newlabel{fig:Opex_Capex_Salvage_comp}{{9}{16}{Comparison of cumulative OPEX (left), CAPEX (centre) and salvage value (right) in 2050 from the perfect foresight optimisation under uncertainties and the \gls *{RL}-based myopic optimisation}{figure.9}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Comparison of the primary energy mix in 2050 from the perfect foresight optimisation under uncertainties and the \gls *{RL}-based myopic optimisation. The biggest difference is about e-ammonia to supply \gls *{CCGT}.}}{16}{figure.10}\protected@file@percent }
-\newlabel{fig:Mix_2050_comp}{{10}{16}{Comparison of the primary energy mix in 2050 from the perfect foresight optimisation under uncertainties and the \gls *{RL}-based myopic optimisation. The biggest difference is about e-ammonia to supply \gls *{CCGT}}{figure.10}{}}
-\newlabel{subsec:binding}{{1}{16}{To bind or not to bind, that is the question}{section*.26}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces Binding versus non-binding constraints. In \gls *{LP} where the feasibility domain is non-empty and bounded, the constraints defined a convex feasibility domain in the space of variables (here, x$_1$ and x$_2$). The optimal solution usually locates on a vertex of this domain, i.e., the intersection of several constraints (here, constraints 2 and 3) limiting the solution. These constraints are considered binding, i.e., having a limiting impact on the optimal solution.}}{17}{figure.11}\protected@file@percent }
-\newlabel{fig:Binding_constr}{{11}{17}{Binding versus non-binding constraints. In \gls *{LP} where the feasibility domain is non-empty and bounded, the constraints defined a convex feasibility domain in the space of variables (here, x$_1$ and x$_2$). The optimal solution usually locates on a vertex of this domain, \ie the intersection of several constraints (here, constraints 2 and 3) limiting the solution. These constraints are considered binding, \ie having a limiting impact on the optimal solution}{figure.11}{}}
 \citation{haarnoja2018soft}
 \citation{haarnoja2018soft}
+\newlabel{subsec:meth_RL_fundamentals}{{1}{19}{Reinforcement Learning fundamentals and algorithm}{section*.27}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces General concept of \acrfull {RL} as the interactions between the agent and its environment. The agent takes some action that has an impact on the environment which feeds back the agent with a reward and the new state. The objective of the agent is to optimise its policy, i.e., the mapping between the state it is at and the action to take, by maximising its cumulative reward.}}{19}{figure.9}\protected@file@percent }
+\newlabel{fig:RL_Fundamentals}{{9}{19}{General concept of \acrfull {RL} as the interactions between the agent and its environment. The agent takes some action that has an impact on the environment which feeds back the agent with a reward and the new state. The objective of the agent is to optimise its policy, \ie the mapping between the state it is at and the action to take, by maximising its cumulative reward}{figure.9}{}}
 \citation{perera2021applications}
 \citation{haarnoja2018soft}
 \citation{cao2020reinforcement}
 \citation{cao2020reinforcement}
-\@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces General concept of actor-critic-based algorithms. The two \gls *{NN} are trained against each other for the actor to improve the control policy and for the critic to provide a better judgement of the actor's action via the temporal-difference (TD) error. Graph adapted from \cite  {cao2020reinforcement}.}}{18}{figure.12}\protected@file@percent }
-\newlabel{fig:Actor-critic}{{12}{18}{General concept of actor-critic-based algorithms. The two \gls *{NN} are trained against each other for the actor to improve the control policy and for the critic to provide a better judgement of the actor's action via the temporal-difference (TD) error. Graph adapted from \cite {cao2020reinforcement}}{figure.12}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces General concept of actor-critic-based algorithms. The two \gls *{NN} are trained against each other for the actor to improve the control policy and for the critic to provide a better judgement of the actor's action via the temporal-difference (TD) error. Graph adapted from \cite  {cao2020reinforcement}.}}{20}{figure.10}\protected@file@percent }
+\newlabel{fig:Actor-critic}{{10}{20}{General concept of actor-critic-based algorithms. The two \gls *{NN} are trained against each other for the actor to improve the control policy and for the critic to provide a better judgement of the actor's action via the temporal-difference (TD) error. Graph adapted from \cite {cao2020reinforcement}}{figure.10}{}}
 \citation{haarnoja2017reinforcement}
 \citation{ziebart2010modeling}
 \citation{haarnoja2017reinforcement}
@@ -84,46 +91,38 @@
 \citation{abadi2016tensorflow}
 \citation{sutton2018reinforcement}
 \citation{haarnoja2018soft}
-\citation{castrejon2020making}
-\newlabel{eq:SAC_objective}{{1}{19}{Problem formulation and algorithm}{equation.1.1}{}}
-\newlabel{sec:RL:act_states_rew}{{1}{19}{Definition of the actions, reward and states}{section*.28}{}}
-\newlabel{subsec:RL:act_states_rew:act}{{1}{19}{Actions}{section*.29}{}}
-\newlabel{eq:RL:act_gwp}{{2}{19}{Actions}{equation.1.2}{}}
-\citation{christiano2017deep}
-\citation{amodei2016concrete}
-\citation{henderson2018deep}
-\citation{sutton2018reinforcement}
-\newlabel{eq:RL:act_NG}{{3}{20}{Actions}{equation.1.3}{}}
-\newlabel{eq:RL:act_LFO}{{4}{20}{Actions}{equation.1.4}{}}
-\newlabel{eq:RL:act_COAL}{{5}{20}{Actions}{equation.1.5}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {13}{\ignorespaces Actions available to the decision-maker. Taken at the beginning of the time window to optimise (year $Y$), the four actions impact (i) the emissions of the system at the end of the time window (year $Y+10$) and, (ii-iv) the consumption of fossil gas, LFO and coal at years $Y+5$ and $Y+10$. Unlike the first action that sets a target for the end of the time window, the last three aim at limiting the consumption of these fossil resources over the whole time window.}}{20}{figure.13}\protected@file@percent }
-\newlabel{fig:Schematic_actions}{{13}{20}{Actions available to the decision-maker. Taken at the beginning of the time window to optimise (year $Y$), the four actions impact (i) the emissions of the system at the end of the time window (year $Y+10$) and, (ii-iv) the consumption of fossil gas, LFO and coal at years $Y+5$ and $Y+10$. Unlike the first action that sets a target for the end of the time window, the last three aim at limiting the consumption of these fossil resources over the whole time window}{figure.13}{}}
-\newlabel{subsec:RL:act_states_rew:rew}{{1}{20}{Reward}{section*.30}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {14}{\ignorespaces Reward function, $R$. Before 2050, the episode is prematurely ended and a negative reward is given if the optimisation is infeasible or if the \ce {CO2} budget is exceeded. If the optimisation provides a solution and the \ce {CO2} budget is not exceeded, the episode continues. Finally, if the episode goes until 2050, the reward is a weighted sum between the capped cumulative emissions and the total transition cost, and the episode terminates. After terminating an episode, the process starts over at the initial state, i.e., 2020.}}{22}{figure.14}\protected@file@percent }
-\newlabel{fig:Reward}{{14}{22}{Reward function, $R$. Before 2050, the episode is prematurely ended and a negative reward is given if the optimisation is infeasible or if the \ce {CO2} budget is exceeded. If the optimisation provides a solution and the \ce {CO2} budget is not exceeded, the episode continues. Finally, if the episode goes until 2050, the reward is a weighted sum between the capped cumulative emissions and the total transition cost, and the episode terminates. After terminating an episode, the process starts over at the initial state, \ie 2020}{figure.14}{}}
-\citation{sutton2018reinforcement}
-\citation{REDIII}
-\newlabel{subsec:RL:act_states_rew:states}{{1}{23}{States}{section*.31}{}}
+\newlabel{eq:SAC_objective}{{5}{21}{Reinforcement Learning fundamentals and algorithm}{equation.1.5}{}}
+\newlabel{subsec:comp_PF}{{1}{21}{Comparison with perfect foresight under uncertainties}{section*.28}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces Comparison of \ce {CO2} emissions pathways (left) and total transition cost (right) from the perfect foresight optimisation under uncertainties and the \gls *{RL}-based myopic optimisation. Myopic transitions succeed with a more drastic reduction of emissions in the short term and, on average, more favourable economic conditions.}}{22}{figure.11}\protected@file@percent }
+\newlabel{fig:Gwp_pathway_total_tran_cost}{{11}{22}{Comparison of \ce {CO2} emissions pathways (left) and total transition cost (right) from the perfect foresight optimisation under uncertainties and the \gls *{RL}-based myopic optimisation. Myopic transitions succeed with a more drastic reduction of emissions in the short term and, on average, more favourable economic conditions}{figure.11}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces Comparison of cumulative OPEX (left), CAPEX (centre) and salvage value (right) in 2050 from the perfect foresight optimisation under uncertainties and the \gls *{RL}-based myopic optimisation.}}{22}{figure.12}\protected@file@percent }
+\newlabel{fig:Opex_Capex_Salvage_comp}{{12}{22}{Comparison of cumulative OPEX (left), CAPEX (centre) and salvage value (right) in 2050 from the perfect foresight optimisation under uncertainties and the \gls *{RL}-based myopic optimisation}{figure.12}{}}
+\citation{bertsimas1997introduction}
 \bibdata{references}
 \bibcite{poncelet2016myopic}{{1}{2016}{{Poncelet et~al.}}{{Poncelet, Delarue, Six and D'haeseleer}}}
 \bibcite{cao2020reinforcement}{{2}{2020}{{Cao et~al.}}{{Cao, Hu, Zhao, Zhang, Zhang, Liu, Chen and Blaabjerg}}}
 \bibcite{perera2021applications}{{3}{2021}{{Perera and Kamalaruban}}{{}}}
 \bibcite{thiran2024exploring}{{4}{2024}{{Thiran}}{{}}}
 \bibcite{sun2024indispensable}{{5}{2024}{{Sun et~al.}}{{Sun, Qin, Su and Zhang}}}
+\@writefile{lof}{\contentsline {figure}{\numberline {13}{\ignorespaces Comparison of the primary energy mix in 2050 from the perfect foresight optimisation under uncertainties and the \gls *{RL}-based myopic optimisation. The biggest difference is about e-ammonia to supply \gls *{CCGT}.}}{23}{figure.13}\protected@file@percent }
+\newlabel{fig:Mix_2050_comp}{{13}{23}{Comparison of the primary energy mix in 2050 from the perfect foresight optimisation under uncertainties and the \gls *{RL}-based myopic optimisation. The biggest difference is about e-ammonia to supply \gls *{CCGT}}{figure.13}{}}
+\newlabel{subsec:binding}{{1}{23}{To bind or not to bind, that is the question}{section*.29}{}}
 \bibcite{rixhon2021terminology}{{6}{2021}{{Rixhon et~al.}}{{Rixhon, Limpens, Contino and Jeanmart}}}
 \bibcite{vogt2018starting}{{7}{2018}{{Vogt-Schilb et~al.}}{{Vogt-Schilb, Meunier and Hallegatte}}}
 \bibcite{haarnoja2018soft}{{8}{2018}{{Haarnoja et~al.}}{{Haarnoja, Zhou, Abbeel and Levine}}}
 \bibcite{pickering2022diversity}{{9}{2022}{{Pickering et~al.}}{{Pickering, Lombardi and Pfenninger}}}
-\bibcite{sutton2018reinforcement}{{10}{2018}{{Sutton and Barto}}{{}}}
-\bibcite{davidsilver_RL_online}{{11}{2016}{{David Silver}}{{}}}
-\bibcite{bertsimas1997introduction}{{12}{1997}{{Bertsimas and Tsitsiklis}}{{}}}
-\bibcite{haarnoja2017reinforcement}{{13}{2017}{{Haarnoja et~al.}}{{Haarnoja, Tang, Abbeel and Levine}}}
-\bibcite{ziebart2010modeling}{{14}{2010}{{Ziebart}}{{}}}
-\bibcite{raffin2021stable}{{15}{2021}{{Raffin et~al.}}{{Raffin, Hill, Gleave, Kanervisto, Ernestus and Dormann}}}
-\bibcite{abadi2016tensorflow}{{16}{2016}{{Abadi et~al.}}{{Abadi, Agarwal, Barham, Brevdo, Chen, Citro, Corrado, Davis, Dean, Devin et~al.}}}
-\bibcite{castrejon2020making}{{17}{2020}{{Castrejon-Campos et~al.}}{{Castrejon-Campos, Aye and Hui}}}
-\bibcite{christiano2017deep}{{18}{2017}{{Christiano et~al.}}{{Christiano, Leike, Brown, Martic, Legg and Amodei}}}
-\bibcite{amodei2016concrete}{{19}{2016}{{Amodei et~al.}}{{Amodei, Olah, Steinhardt, Christiano, Schulman and Man{\'e}}}}
-\bibcite{henderson2018deep}{{20}{2018}{{Henderson et~al.}}{{Henderson, Islam, Bachman, Pineau, Precup and Meger}}}
-\bibcite{REDIII}{{21}{2023}{{European Parliament}}{{}}}
+\bibcite{castrejon2020making}{{10}{2020}{{Castrejon-Campos et~al.}}{{Castrejon-Campos, Aye and Hui}}}
+\bibcite{christiano2017deep}{{11}{2017}{{Christiano et~al.}}{{Christiano, Leike, Brown, Martic, Legg and Amodei}}}
+\bibcite{amodei2016concrete}{{12}{2016}{{Amodei et~al.}}{{Amodei, Olah, Steinhardt, Christiano, Schulman and Man{\'e}}}}
+\bibcite{henderson2018deep}{{13}{2018}{{Henderson et~al.}}{{Henderson, Islam, Bachman, Pineau, Precup and Meger}}}
+\@writefile{lof}{\contentsline {figure}{\numberline {14}{\ignorespaces Binding versus non-binding constraints. In \gls *{LP} where the feasibility domain is non-empty and bounded, the constraints defined a convex feasibility domain in the space of variables (here, x$_1$ and x$_2$). The optimal solution usually locates on a vertex of this domain, i.e., the intersection of several constraints (here, constraints 2 and 3) limiting the solution. These constraints are considered binding, i.e., having a limiting impact on the optimal solution.}}{24}{figure.14}\protected@file@percent }
+\newlabel{fig:Binding_constr}{{14}{24}{Binding versus non-binding constraints. In \gls *{LP} where the feasibility domain is non-empty and bounded, the constraints defined a convex feasibility domain in the space of variables (here, x$_1$ and x$_2$). The optimal solution usually locates on a vertex of this domain, \ie the intersection of several constraints (here, constraints 2 and 3) limiting the solution. These constraints are considered binding, \ie having a limiting impact on the optimal solution}{figure.14}{}}
+\bibcite{sutton2018reinforcement}{{14}{2018}{{Sutton and Barto}}{{}}}
+\bibcite{REDIII}{{15}{2023}{{European Parliament}}{{}}}
+\bibcite{davidsilver_RL_online}{{16}{2016}{{David Silver}}{{}}}
+\bibcite{haarnoja2017reinforcement}{{17}{2017}{{Haarnoja et~al.}}{{Haarnoja, Tang, Abbeel and Levine}}}
+\bibcite{ziebart2010modeling}{{18}{2010}{{Ziebart}}{{}}}
+\bibcite{raffin2021stable}{{19}{2021}{{Raffin et~al.}}{{Raffin, Hill, Gleave, Kanervisto, Ernestus and Dormann}}}
+\bibcite{abadi2016tensorflow}{{20}{2016}{{Abadi et~al.}}{{Abadi, Agarwal, Barham, Brevdo, Chen, Citro, Corrado, Davis, Dean, Devin et~al.}}}
+\bibcite{bertsimas1997introduction}{{21}{1997}{{Bertsimas and Tsitsiklis}}{{}}}
 \gdef \@abspage@last{25}
