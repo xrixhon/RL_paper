@@ -1,0 +1,196 @@
+\begin{thebibliography}{21}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\href}[2]{#2}
+\providecommand{\path}[1]{#1}
+\providecommand{\DOIprefix}{doi: }
+\providecommand{\ArXivprefix}{arXiv: }
+\providecommand{\URLprefix}{URL: }
+\providecommand{\Pubmedprefix}{pmid: }
+\providecommand{\doi}[1]{\href{http://dx.doi.org/#1}{\path{#1}}}
+\providecommand{\Pubmed}[1]{\href{pmid:#1}{\path{#1}}}
+\providecommand{\BIBand}{and}
+\providecommand{\bibinfo}[2]{#2}
+\ifx\xfnm\undefined \def\xfnm[#1]{\unskip,\space#1}\fi
+\makeatletter\def\@biblabel#1{#1.}\makeatother
+%Type = Inproceedings
+\bibitem[{Poncelet et~al.(2016)Poncelet, Delarue, Six and
+  D'haeseleer}]{poncelet2016myopic}
+\bibinfo{author}{Poncelet, K.}, \bibinfo{author}{Delarue, E.},
+  \bibinfo{author}{Six, D.}, and \bibinfo{author}{D'haeseleer, W.}
+  (\bibinfo{year}{2016}). \bibinfo{title}{Myopic optimization models for
+  simulation of investment decisions in the electric power sector}.
+\newblock In \bibinfo{booktitle}{2016 13th International Conference on the
+  European Energy Market (EEM)}. \bibinfo{organization}{IEEE} pp.
+  \bibinfo{pages}{1--9}.
+%Type = Article
+\bibitem[{Cao et~al.(2020)Cao, Hu, Zhao, Zhang, Zhang, Liu, Chen and
+  Blaabjerg}]{cao2020reinforcement}
+\bibinfo{author}{Cao, D.}, \bibinfo{author}{Hu, W.}, \bibinfo{author}{Zhao,
+  J.}, \bibinfo{author}{Zhang, G.}, \bibinfo{author}{Zhang, B.},
+  \bibinfo{author}{Liu, Z.}, \bibinfo{author}{Chen, Z.}, and
+  \bibinfo{author}{Blaabjerg, F.} (\bibinfo{year}{2020}).
+  \bibinfo{title}{Reinforcement learning and its applications in modern power
+  and energy systems: A review}.
+\newblock \bibinfo{journal}{Journal of modern power systems and clean energy}
+  \emph{\bibinfo{volume}{8}}, \bibinfo{pages}{1029--1042}.
+%Type = Article
+\bibitem[{Perera and Kamalaruban(2021)}]{perera2021applications}
+\bibinfo{author}{Perera, A.}, and \bibinfo{author}{Kamalaruban, P.}
+  (\bibinfo{year}{2021}). \bibinfo{title}{Applications of reinforcement
+  learning in energy systems}.
+\newblock \bibinfo{journal}{Renewable and Sustainable Energy Reviews}
+  \emph{\bibinfo{volume}{137}}, \bibinfo{pages}{110618}.
+%Type = Phdthesis
+\bibitem[{Thiran(2024)}]{thiran2024exploring}
+\bibinfo{author}{Thiran, P.}
+\newblock \bibinfo{title}{Exploring options for a fossil-free european energy
+  system: The role of renewable fuels}.
+\newblock Ph.D. thesis UCL-Universit{\'e} Catholique de Louvain
+  (\bibinfo{year}{2024}).
+%Type = Article
+\bibitem[{Sun et~al.(2024)Sun, Qin, Su and Zhang}]{sun2024indispensable}
+\bibinfo{author}{Sun, T.}, \bibinfo{author}{Qin, M.}, \bibinfo{author}{Su,
+  C.W.}, and \bibinfo{author}{Zhang, W.} (\bibinfo{year}{2024}).
+  \bibinfo{title}{The indispensable role of energy import: does its price
+  really matter for german employment?}
+\newblock \bibinfo{journal}{Energy Strategy Reviews}
+  \emph{\bibinfo{volume}{55}}, \bibinfo{pages}{101495}.
+%Type = Article
+\bibitem[{Rixhon et~al.(2021)Rixhon, Limpens, Contino and
+  Jeanmart}]{rixhon2021terminology}
+\bibinfo{author}{Rixhon, X.}, \bibinfo{author}{Limpens, G.},
+  \bibinfo{author}{Contino, F.}, and \bibinfo{author}{Jeanmart, H.}
+  (\bibinfo{year}{2021}). \bibinfo{title}{Taxonomy of the fuels in a
+  whole-energy system}.
+\newblock \bibinfo{journal}{Frontiers in Energy Research - Sustainable Energy
+  Systems and Policies}. \DOIprefix\doi{10.3389/fenrg.2021.660073}.
+%Type = Article
+\bibitem[{Vogt-Schilb et~al.(2018)Vogt-Schilb, Meunier and
+  Hallegatte}]{vogt2018starting}
+\bibinfo{author}{Vogt-Schilb, A.}, \bibinfo{author}{Meunier, G.}, and
+  \bibinfo{author}{Hallegatte, S.} (\bibinfo{year}{2018}). \bibinfo{title}{When
+  starting with the most expensive option makes sense: Optimal timing, cost and
+  sectoral allocation of abatement investment}.
+\newblock \bibinfo{journal}{Journal of Environmental Economics and Management}
+  \emph{\bibinfo{volume}{88}}, \bibinfo{pages}{210--233}.
+%Type = Inproceedings
+\bibitem[{Haarnoja et~al.(2018)Haarnoja, Zhou, Abbeel and
+  Levine}]{haarnoja2018soft}
+\bibinfo{author}{Haarnoja, T.}, \bibinfo{author}{Zhou, A.},
+  \bibinfo{author}{Abbeel, P.}, and \bibinfo{author}{Levine, S.}
+  (\bibinfo{year}{2018}). \bibinfo{title}{Soft actor-critic: Off-policy maximum
+  entropy deep reinforcement learning with a stochastic actor}.
+\newblock In \bibinfo{booktitle}{International conference on machine learning}.
+  \bibinfo{organization}{PMLR} pp. \bibinfo{pages}{1861--1870}.
+%Type = Article
+\bibitem[{Pickering et~al.(2022)Pickering, Lombardi and
+  Pfenninger}]{pickering2022diversity}
+\bibinfo{author}{Pickering, B.}, \bibinfo{author}{Lombardi, F.}, and
+  \bibinfo{author}{Pfenninger, S.} (\bibinfo{year}{2022}).
+  \bibinfo{title}{Diversity of options to eliminate fossil fuels and reach
+  carbon neutrality across the entire european energy system}.
+\newblock \bibinfo{journal}{Joule} \emph{\bibinfo{volume}{6}},
+  \bibinfo{pages}{1253--1276}.
+%Type = Book
+\bibitem[{Sutton and Barto(2018)}]{sutton2018reinforcement}
+\bibinfo{author}{Sutton, R.S.}, and \bibinfo{author}{Barto, A.G.}
+  (\bibinfo{year}{2018}). \bibinfo{title}{Reinforcement learning: An
+  introduction}. \bibinfo{publisher}{MIT press}.
+%Type = Misc
+\bibitem[{{David Silver}(2016)}]{davidsilver_RL_online}
+\bibinfo{author}{{David Silver}} (\bibinfo{year}{2016}).
+\newblock \bibinfo{title}{{RL Course by David Silver}}.
+\newblock
+  \bibinfo{howpublished}{\url{https://www.youtube.com/watch?v=2pWv7GOvuf0&list=PLzuuYNsE1EZAXYR4FJ75jcJseBmo4KQ9-}}.
+  .
+%Type = Book
+\bibitem[{Bertsimas and Tsitsiklis(1997)}]{bertsimas1997introduction}
+\bibinfo{author}{Bertsimas, D.}, and \bibinfo{author}{Tsitsiklis, J.N.}
+  (\bibinfo{year}{1997}). \bibinfo{title}{Introduction to linear optimization}
+  vol.~\bibinfo{volume}{6}. \bibinfo{publisher}{Athena Scientific Belmont, MA}.
+%Type = Inproceedings
+\bibitem[{Haarnoja et~al.(2017)Haarnoja, Tang, Abbeel and
+  Levine}]{haarnoja2017reinforcement}
+\bibinfo{author}{Haarnoja, T.}, \bibinfo{author}{Tang, H.},
+  \bibinfo{author}{Abbeel, P.}, and \bibinfo{author}{Levine, S.}
+  (\bibinfo{year}{2017}). \bibinfo{title}{Reinforcement learning with deep
+  energy-based policies}.
+\newblock In \bibinfo{booktitle}{International conference on machine learning}.
+  \bibinfo{organization}{PMLR} pp. \bibinfo{pages}{1352--1361}.
+%Type = Book
+\bibitem[{Ziebart(2010)}]{ziebart2010modeling}
+\bibinfo{author}{Ziebart, B.D.} (\bibinfo{year}{2010}).
+  \bibinfo{title}{Modeling purposeful adaptive behavior with the principle of
+  maximum causal entropy}. \bibinfo{publisher}{Carnegie Mellon University}.
+%Type = Article
+\bibitem[{Raffin et~al.(2021)Raffin, Hill, Gleave, Kanervisto, Ernestus and
+  Dormann}]{raffin2021stable}
+\bibinfo{author}{Raffin, A.}, \bibinfo{author}{Hill, A.},
+  \bibinfo{author}{Gleave, A.}, \bibinfo{author}{Kanervisto, A.},
+  \bibinfo{author}{Ernestus, M.}, and \bibinfo{author}{Dormann, N.}
+  (\bibinfo{year}{2021}). \bibinfo{title}{Stable-baselines3: Reliable
+  reinforcement learning implementations}.
+\newblock \bibinfo{journal}{The Journal of Machine Learning Research}
+  \emph{\bibinfo{volume}{22}}, \bibinfo{pages}{12348--12355}.
+%Type = Article
+\bibitem[{Abadi et~al.(2016)Abadi, Agarwal, Barham, Brevdo, Chen, Citro,
+  Corrado, Davis, Dean, Devin et~al.}]{abadi2016tensorflow}
+\bibinfo{author}{Abadi, M.}, \bibinfo{author}{Agarwal, A.},
+  \bibinfo{author}{Barham, P.}, \bibinfo{author}{Brevdo, E.},
+  \bibinfo{author}{Chen, Z.}, \bibinfo{author}{Citro, C.},
+  \bibinfo{author}{Corrado, G.S.}, \bibinfo{author}{Davis, A.},
+  \bibinfo{author}{Dean, J.}, \bibinfo{author}{Devin, M.} et~al.
+  (\bibinfo{year}{2016}). \bibinfo{title}{Tensorflow: Large-scale machine
+  learning on heterogeneous distributed systems}.
+\newblock \bibinfo{journal}{arXiv preprint arXiv:1603.04467}.
+%Type = Article
+\bibitem[{Castrejon-Campos et~al.(2020)Castrejon-Campos, Aye and
+  Hui}]{castrejon2020making}
+\bibinfo{author}{Castrejon-Campos, O.}, \bibinfo{author}{Aye, L.}, and
+  \bibinfo{author}{Hui, F.K.P.} (\bibinfo{year}{2020}). \bibinfo{title}{Making
+  policy mixes more robust: An integrative and interdisciplinary approach for
+  clean energy transitions}.
+\newblock \bibinfo{journal}{Energy Research \& Social Science}
+  \emph{\bibinfo{volume}{64}}, \bibinfo{pages}{101425}.
+%Type = Article
+\bibitem[{Christiano et~al.(2017)Christiano, Leike, Brown, Martic, Legg and
+  Amodei}]{christiano2017deep}
+\bibinfo{author}{Christiano, P.F.}, \bibinfo{author}{Leike, J.},
+  \bibinfo{author}{Brown, T.}, \bibinfo{author}{Martic, M.},
+  \bibinfo{author}{Legg, S.}, and \bibinfo{author}{Amodei, D.}
+  (\bibinfo{year}{2017}). \bibinfo{title}{Deep reinforcement learning from
+  human preferences}.
+\newblock \bibinfo{journal}{Advances in neural information processing systems}
+  \emph{\bibinfo{volume}{30}}.
+%Type = Article
+\bibitem[{Amodei et~al.(2016)Amodei, Olah, Steinhardt, Christiano, Schulman and
+  Man{\'e}}]{amodei2016concrete}
+\bibinfo{author}{Amodei, D.}, \bibinfo{author}{Olah, C.},
+  \bibinfo{author}{Steinhardt, J.}, \bibinfo{author}{Christiano, P.},
+  \bibinfo{author}{Schulman, J.}, and \bibinfo{author}{Man{\'e}, D.}
+  (\bibinfo{year}{2016}). \bibinfo{title}{Concrete problems in ai safety}.
+\newblock \bibinfo{journal}{arXiv preprint arXiv:1606.06565}.
+%Type = Inproceedings
+\bibitem[{Henderson et~al.(2018)Henderson, Islam, Bachman, Pineau, Precup and
+  Meger}]{henderson2018deep}
+\bibinfo{author}{Henderson, P.}, \bibinfo{author}{Islam, R.},
+  \bibinfo{author}{Bachman, P.}, \bibinfo{author}{Pineau, J.},
+  \bibinfo{author}{Precup, D.}, and \bibinfo{author}{Meger, D.}
+  (\bibinfo{year}{2018}). \bibinfo{title}{Deep reinforcement learning that
+  matters}.
+\newblock In \bibinfo{booktitle}{Proceedings of the AAAI conference on
+  artificial intelligence} vol.~\bibinfo{volume}{32}.
+%Type = Techreport
+\bibitem[{{European Parliament}(2023)}]{REDIII}
+\bibinfo{author}{{European Parliament}}.
+\newblock \bibinfo{title}{{Directive (EU) 2023/2413 of the European Parliament
+  and of the Council of 18 October 2023 amending Directive (EU) 2018/2001,
+  Regulation (EU) 2018/1999 and Directive 98/70/EC as regards the promotion of
+  energy from renewable sources, and repealing Council Directive (EU)
+  2015/652}}.
+\newblock \bibinfo{type}{Tech. Rep.} {European Parliament}
+  (\bibinfo{year}{2023}).
+\newblock \bibinfo{note}{{Official Journal of the European Union 2413, 1-77}}.
+
+\end{thebibliography}

@@ -1,0 +1,129 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand\HyperFirstAtBeginDocument{\AtBeginDocument}
+\HyperFirstAtBeginDocument{\ifx\hyper@anchor\@undefined
+\global\let\oldcontentsline\contentsline
+\gdef\contentsline#1#2#3#4{\oldcontentsline{#1}{#2}{#3}}
+\global\let\oldnewlabel\newlabel
+\gdef\newlabel#1#2{\newlabelxx{#1}#2}
+\gdef\newlabelxx#1#2#3#4#5#6{\oldnewlabel{#1}{{#2}{#3}}}
+\AtEndDocument{\ifx\hyper@anchor\@undefined
+\let\contentsline\oldcontentsline
+\let\newlabel\oldnewlabel
+\fi}
+\fi}
+\global\let\hyper@last\relax 
+\gdef\HyperFirstAtBeginDocument#1{#1}
+\providecommand\HyField@AuxAddToFields[1]{}
+\providecommand\HyField@AuxAddToCoFields[2]{}
+\bibstyle{numbered}
+\citation{poncelet2016myopic}
+\citation{cao2020reinforcement,perera2021applications}
+\citation{cao2020reinforcement}
+\citation{perera2021applications}
+\providecommand\@newglossary[4]{}
+\@newglossary{main}{glg}{gls}{glo}
+\@newglossary{acronym}{alg}{acr}{acn}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Context and scale}{1}{section.1}\protected@file@percent }
+\citation{thiran2024exploring,sun2024indispensable}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces The Reinforcement Learning (RL) framework applied to the myopic optimisation of the energy transition pathway between 2020 and 2050. Here, the agent interacts with its environment, i.e., the energy-system model on a limited decision window of 10 years. At the beginning of each episode, a different sample of uncertain parameters is drawn and affects the environment, EnergyScope Pathway, according to the methodology detailed in Section \ref  {subsec:uncert_charac}.}}{2}{figure.1}\protected@file@percent }
+\newlabel{fig:Schematics_RL}{{1}{2}{The Reinforcement Learning (RL) framework applied to the myopic optimisation of the energy transition pathway between 2020 and 2050. Here, the agent interacts with its environment, \ie the energy-system model on a limited decision window of 10 years. At the beginning of each episode, a different sample of uncertain parameters is drawn and affects the environment, EnergyScope Pathway, according to the methodology detailed in Section \ref {subsec:uncert_charac}}{figure.1}{}}
+\newlabel{subsec:RL:learning:rew_succ}{{1}{2}{Reward and success}{section*.5}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Mean reward and success rate of the different learning batches. The stabilisation of the reward curve shows a convergence of the learning process from the agent's point of view. The evolution of the success rate also shows that the reward function aims at more and more successful transitions.}}{3}{figure.2}\protected@file@percent }
+\newlabel{fig:reward_success}{{2}{3}{Mean reward and success rate of the different learning batches. The stabilisation of the reward curve shows a convergence of the learning process from the agent's point of view. The evolution of the success rate also shows that the reward function aims at more and more successful transitions}{figure.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Reward distribution between successes and failures. Graph on the right-hand side details at the end of which time window the failure occurred. The ``tipping year'' is 2040 as failing the transition by 2040 represents 57\% of all the failures. Beyond this point, through this learning process, succeeding the transition represents 38\% of the episodes. }}{4}{figure.3}\protected@file@percent }
+\newlabel{fig:reward_status}{{3}{4}{Reward distribution between successes and failures. Graph on the right-hand side details at the end of which time window the failure occurred. The ``tipping year'' is 2040 as failing the transition by 2040 represents 57\% of all the failures. Beyond this point, through this learning process, succeeding the transition represents 38\% of the episodes}{figure.3}{}}
+\newlabel{subsec:RL:learning:states}{{1}{4}{States}{section*.6}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Exploration of the state space over the learning process: distribution of occurrence of cumulative emissions (left) and costs (right). The number of remaining attempts decreases with time since the infeasible problems and the solutions overshooting the \ce {CO2} budget are discarded prematurely, i.e., before 2050. Besides infeasible problems, distributions labelled as ``Failure'' represent the attempts that overshot the \ce {CO2} budget by 2050 at the latest. The majority of successful transitions have cumulative emissions much lower than the \ce {CO2} budget and are cheaper than the REF case. }}{5}{figure.4}\protected@file@percent }
+\newlabel{fig:Cum_gwp_cost}{{4}{5}{Exploration of the state space over the learning process: distribution of occurrence of cumulative emissions (left) and costs (right). The number of remaining attempts decreases with time since the infeasible problems and the solutions overshooting the \ce {CO2} budget are discarded prematurely, \ie before 2050. Besides infeasible problems, distributions labelled as ``Failure'' represent the attempts that overshot the \ce {CO2} budget by 2050 at the latest. The majority of successful transitions have cumulative emissions much lower than the \ce {CO2} budget and are cheaper than the REF case}{figure.4}{}}
+\citation{rixhon2021terminology}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Skewness of cumulative emissions and costs in 2050. Cumulative emissions are skewed to the left and to the right for the successes and failures, respectively. The skewness of the cumulative costs for successful transitions is higher compared to failures. On top of being the results of the optimisation through EnergyScope, these are influenced by the agent's policy that aims only at lowering the total transition cost as soon as it meets the \ce {CO2} budget.}}{6}{table.1}\protected@file@percent }
+\newlabel{tab:skewness_gwp_cost}{{1}{6}{Skewness of cumulative emissions and costs in 2050. Cumulative emissions are skewed to the left and to the right for the successes and failures, respectively. The skewness of the cumulative costs for successful transitions is higher compared to failures. On top of being the results of the optimisation through EnergyScope, these are influenced by the agent's policy that aims only at lowering the total transition cost as soon as it meets the \ce {CO2} budget}{table.1}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Uncertain parameters impacting the most the total transition cost and, for the successful transitions, the mean of their values between 0 and 100\%, $\mu $, and their skewness, $\gamma $. On top of being supported by the agent's actions, successful transitions occur when the cost of purchasing fossil fuels is more increased than the one of electrofuels.}}{6}{table.2}\protected@file@percent }
+\newlabel{tab:param_RL}{{2}{6}{Uncertain parameters impacting the most the total transition cost and, for the successful transitions, the mean of their values between 0 and 100\%, $\mu $, and their skewness, $\gamma $. On top of being supported by the agent's actions, successful transitions occur when the cost of purchasing fossil fuels is more increased than the one of electrofuels}{table.2}{}}
+\citation{vogt2018starting}
+\newlabel{subsec:RL:learning:actions}{{1}{7}{Actions}{section*.7}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Exploration of the state space over the learning process: distribution of occurrence of share of renewable energy carriers in the primary energy mix (left) and efficiency (right). The number of remaining attempts decreases with time since infeasible problems and solutions overshooting the \ce {CO2} budget are discarded prematurely, i.e., before 2050. Besides infeasible problems, distributions labelled as ``Failure'' represent the attempts that overshot the \ce {CO2} budget by 2050 at the latest. Integration of local \gls *{VRES} at early stages then massive import of electrofuels later are needed to secure successful transitions. Below a near-term threshold ($\sim $60\%), the chances of success are limited, i.e., no-go zones. Efficiency is less valuable information for the agent to succeed transitions as failures and successes indistinguishably spread over the whole range.}}{8}{figure.5}\protected@file@percent }
+\newlabel{fig:RE_in_mix_Efficiency}{{5}{8}{Exploration of the state space over the learning process: distribution of occurrence of share of renewable energy carriers in the primary energy mix (left) and efficiency (right). The number of remaining attempts decreases with time since infeasible problems and solutions overshooting the \ce {CO2} budget are discarded prematurely, \ie before 2050. Besides infeasible problems, distributions labelled as ``Failure'' represent the attempts that overshot the \ce {CO2} budget by 2050 at the latest. Integration of local \gls *{VRES} at early stages then massive import of electrofuels later are needed to secure successful transitions. Below a near-term threshold ($\sim $60\%), the chances of success are limited, \ie no-go zones. Efficiency is less valuable information for the agent to succeed transitions as failures and successes indistinguishably spread over the whole range}{figure.5}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Keeping only the successful transitions, distribution of occurrence of binding and not binding actions. Depending on the action and its timing, it is actually constraining the optimisation through EnergyScope Pathway or not. Sweet spots can be identified when considering the limits of \gls *{GWP} and fossil gas consumption. Limiting coal consumption is always constraining, unlike \gls *{LFO} which is ``naturally'' substituted by EnergyScope Pathway in the near term.}}{9}{figure.6}\protected@file@percent }
+\newlabel{fig:Binding_learning}{{6}{9}{Keeping only the successful transitions, distribution of occurrence of binding and not binding actions. Depending on the action and its timing, it is actually constraining the optimisation through EnergyScope Pathway or not. Sweet spots can be identified when considering the limits of \gls *{GWP} and fossil gas consumption. Limiting coal consumption is always constraining, unlike \gls *{LFO} which is ``naturally'' substituted by EnergyScope Pathway in the near term}{figure.6}{}}
+\citation{perera2021applications}
+\citation{haarnoja2018soft}
+\citation{pickering2022diversity}
+\citation{cao2020reinforcement}
+\citation{sutton2018reinforcement}
+\citation{sutton2018reinforcement}
+\citation{davidsilver_RL_online}
+\newlabel{subsec:meth_RL_fundamentals}{{1}{14}{Reinforcement Learning fundamentals}{section*.24}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces General concept of \acrfull {RL} as the interactions between the agent and its environment. The agent takes some action that has an impact on the environment which feeds back the agent with a reward and the new state. The objective of the agent is to optimise its policy, i.e., the mapping between the state it is at and the action to take, by maximising its cumulative reward.}}{14}{figure.7}\protected@file@percent }
+\newlabel{fig:RL_Fundamentals}{{7}{14}{General concept of \acrfull {RL} as the interactions between the agent and its environment. The agent takes some action that has an impact on the environment which feeds back the agent with a reward and the new state. The objective of the agent is to optimise its policy, \ie the mapping between the state it is at and the action to take, by maximising its cumulative reward}{figure.7}{}}
+\newlabel{subsec:comp_PF}{{1}{14}{Comparison with perfect foresight under uncertainties}{section*.25}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Comparison of \ce {CO2} emissions pathways (left) and total transition cost (right) from the perfect foresight optimisation under uncertainties and the \gls *{RL}-based myopic optimisation. Myopic transitions succeed with a more drastic reduction of emissions in the short term and, on average, more favourable economic conditions.}}{15}{figure.8}\protected@file@percent }
+\newlabel{fig:Gwp_pathway_total_tran_cost}{{8}{15}{Comparison of \ce {CO2} emissions pathways (left) and total transition cost (right) from the perfect foresight optimisation under uncertainties and the \gls *{RL}-based myopic optimisation. Myopic transitions succeed with a more drastic reduction of emissions in the short term and, on average, more favourable economic conditions}{figure.8}{}}
+\citation{bertsimas1997introduction}
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Comparison of cumulative OPEX (left), CAPEX (centre) and salvage value (right) in 2050 from the perfect foresight optimisation under uncertainties and the \gls *{RL}-based myopic optimisation.}}{16}{figure.9}\protected@file@percent }
+\newlabel{fig:Opex_Capex_Salvage_comp}{{9}{16}{Comparison of cumulative OPEX (left), CAPEX (centre) and salvage value (right) in 2050 from the perfect foresight optimisation under uncertainties and the \gls *{RL}-based myopic optimisation}{figure.9}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Comparison of the primary energy mix in 2050 from the perfect foresight optimisation under uncertainties and the \gls *{RL}-based myopic optimisation. The biggest difference is about e-ammonia to supply \gls *{CCGT}.}}{16}{figure.10}\protected@file@percent }
+\newlabel{fig:Mix_2050_comp}{{10}{16}{Comparison of the primary energy mix in 2050 from the perfect foresight optimisation under uncertainties and the \gls *{RL}-based myopic optimisation. The biggest difference is about e-ammonia to supply \gls *{CCGT}}{figure.10}{}}
+\newlabel{subsec:binding}{{1}{16}{To bind or not to bind, that is the question}{section*.26}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces Binding versus non-binding constraints. In \gls *{LP} where the feasibility domain is non-empty and bounded, the constraints defined a convex feasibility domain in the space of variables (here, x$_1$ and x$_2$). The optimal solution usually locates on a vertex of this domain, i.e., the intersection of several constraints (here, constraints 2 and 3) limiting the solution. These constraints are considered binding, i.e., having a limiting impact on the optimal solution.}}{17}{figure.11}\protected@file@percent }
+\newlabel{fig:Binding_constr}{{11}{17}{Binding versus non-binding constraints. In \gls *{LP} where the feasibility domain is non-empty and bounded, the constraints defined a convex feasibility domain in the space of variables (here, x$_1$ and x$_2$). The optimal solution usually locates on a vertex of this domain, \ie the intersection of several constraints (here, constraints 2 and 3) limiting the solution. These constraints are considered binding, \ie having a limiting impact on the optimal solution}{figure.11}{}}
+\citation{haarnoja2018soft}
+\citation{haarnoja2018soft}
+\citation{perera2021applications}
+\citation{haarnoja2018soft}
+\citation{cao2020reinforcement}
+\citation{cao2020reinforcement}
+\@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces General concept of actor-critic-based algorithms. The two \gls *{NN} are trained against each other for the actor to improve the control policy and for the critic to provide a better judgement of the actor's action via the temporal-difference (TD) error. Graph adapted from \cite  {cao2020reinforcement}.}}{18}{figure.12}\protected@file@percent }
+\newlabel{fig:Actor-critic}{{12}{18}{General concept of actor-critic-based algorithms. The two \gls *{NN} are trained against each other for the actor to improve the control policy and for the critic to provide a better judgement of the actor's action via the temporal-difference (TD) error. Graph adapted from \cite {cao2020reinforcement}}{figure.12}{}}
+\citation{haarnoja2017reinforcement}
+\citation{ziebart2010modeling}
+\citation{haarnoja2017reinforcement}
+\citation{haarnoja2017reinforcement}
+\citation{raffin2021stable}
+\citation{abadi2016tensorflow}
+\citation{sutton2018reinforcement}
+\citation{haarnoja2018soft}
+\citation{castrejon2020making}
+\newlabel{eq:SAC_objective}{{1}{19}{Problem formulation and algorithm}{equation.1.1}{}}
+\newlabel{sec:RL:act_states_rew}{{1}{19}{Definition of the actions, reward and states}{section*.28}{}}
+\newlabel{subsec:RL:act_states_rew:act}{{1}{19}{Actions}{section*.29}{}}
+\newlabel{eq:RL:act_gwp}{{2}{19}{Actions}{equation.1.2}{}}
+\citation{christiano2017deep}
+\citation{amodei2016concrete}
+\citation{henderson2018deep}
+\citation{sutton2018reinforcement}
+\newlabel{eq:RL:act_NG}{{3}{20}{Actions}{equation.1.3}{}}
+\newlabel{eq:RL:act_LFO}{{4}{20}{Actions}{equation.1.4}{}}
+\newlabel{eq:RL:act_COAL}{{5}{20}{Actions}{equation.1.5}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {13}{\ignorespaces Actions available to the decision-maker. Taken at the beginning of the time window to optimise (year $Y$), the four actions impact (i) the emissions of the system at the end of the time window (year $Y+10$) and, (ii-iv) the consumption of fossil gas, LFO and coal at years $Y+5$ and $Y+10$. Unlike the first action that sets a target for the end of the time window, the last three aim at limiting the consumption of these fossil resources over the whole time window.}}{20}{figure.13}\protected@file@percent }
+\newlabel{fig:Schematic_actions}{{13}{20}{Actions available to the decision-maker. Taken at the beginning of the time window to optimise (year $Y$), the four actions impact (i) the emissions of the system at the end of the time window (year $Y+10$) and, (ii-iv) the consumption of fossil gas, LFO and coal at years $Y+5$ and $Y+10$. Unlike the first action that sets a target for the end of the time window, the last three aim at limiting the consumption of these fossil resources over the whole time window}{figure.13}{}}
+\newlabel{subsec:RL:act_states_rew:rew}{{1}{20}{Reward}{section*.30}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {14}{\ignorespaces Reward function, $R$. Before 2050, the episode is prematurely ended and a negative reward is given if the optimisation is infeasible or if the \ce {CO2} budget is exceeded. If the optimisation provides a solution and the \ce {CO2} budget is not exceeded, the episode continues. Finally, if the episode goes until 2050, the reward is a weighted sum between the capped cumulative emissions and the total transition cost, and the episode terminates. After terminating an episode, the process starts over at the initial state, i.e., 2020.}}{22}{figure.14}\protected@file@percent }
+\newlabel{fig:Reward}{{14}{22}{Reward function, $R$. Before 2050, the episode is prematurely ended and a negative reward is given if the optimisation is infeasible or if the \ce {CO2} budget is exceeded. If the optimisation provides a solution and the \ce {CO2} budget is not exceeded, the episode continues. Finally, if the episode goes until 2050, the reward is a weighted sum between the capped cumulative emissions and the total transition cost, and the episode terminates. After terminating an episode, the process starts over at the initial state, \ie 2020}{figure.14}{}}
+\citation{sutton2018reinforcement}
+\citation{REDIII}
+\newlabel{subsec:RL:act_states_rew:states}{{1}{23}{States}{section*.31}{}}
+\bibdata{references}
+\bibcite{poncelet2016myopic}{{1}{2016}{{Poncelet et~al.}}{{Poncelet, Delarue, Six and D'haeseleer}}}
+\bibcite{cao2020reinforcement}{{2}{2020}{{Cao et~al.}}{{Cao, Hu, Zhao, Zhang, Zhang, Liu, Chen and Blaabjerg}}}
+\bibcite{perera2021applications}{{3}{2021}{{Perera and Kamalaruban}}{{}}}
+\bibcite{thiran2024exploring}{{4}{2024}{{Thiran}}{{}}}
+\bibcite{sun2024indispensable}{{5}{2024}{{Sun et~al.}}{{Sun, Qin, Su and Zhang}}}
+\bibcite{rixhon2021terminology}{{6}{2021}{{Rixhon et~al.}}{{Rixhon, Limpens, Contino and Jeanmart}}}
+\bibcite{vogt2018starting}{{7}{2018}{{Vogt-Schilb et~al.}}{{Vogt-Schilb, Meunier and Hallegatte}}}
+\bibcite{haarnoja2018soft}{{8}{2018}{{Haarnoja et~al.}}{{Haarnoja, Zhou, Abbeel and Levine}}}
+\bibcite{pickering2022diversity}{{9}{2022}{{Pickering et~al.}}{{Pickering, Lombardi and Pfenninger}}}
+\bibcite{sutton2018reinforcement}{{10}{2018}{{Sutton and Barto}}{{}}}
+\bibcite{davidsilver_RL_online}{{11}{2016}{{David Silver}}{{}}}
+\bibcite{bertsimas1997introduction}{{12}{1997}{{Bertsimas and Tsitsiklis}}{{}}}
+\bibcite{haarnoja2017reinforcement}{{13}{2017}{{Haarnoja et~al.}}{{Haarnoja, Tang, Abbeel and Levine}}}
+\bibcite{ziebart2010modeling}{{14}{2010}{{Ziebart}}{{}}}
+\bibcite{raffin2021stable}{{15}{2021}{{Raffin et~al.}}{{Raffin, Hill, Gleave, Kanervisto, Ernestus and Dormann}}}
+\bibcite{abadi2016tensorflow}{{16}{2016}{{Abadi et~al.}}{{Abadi, Agarwal, Barham, Brevdo, Chen, Citro, Corrado, Davis, Dean, Devin et~al.}}}
+\bibcite{castrejon2020making}{{17}{2020}{{Castrejon-Campos et~al.}}{{Castrejon-Campos, Aye and Hui}}}
+\bibcite{christiano2017deep}{{18}{2017}{{Christiano et~al.}}{{Christiano, Leike, Brown, Martic, Legg and Amodei}}}
+\bibcite{amodei2016concrete}{{19}{2016}{{Amodei et~al.}}{{Amodei, Olah, Steinhardt, Christiano, Schulman and Man{\'e}}}}
+\bibcite{henderson2018deep}{{20}{2018}{{Henderson et~al.}}{{Henderson, Islam, Bachman, Pineau, Precup and Meger}}}
+\bibcite{REDIII}{{21}{2023}{{European Parliament}}{{}}}
+\gdef \@abspage@last{25}
